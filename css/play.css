@@ -14,6 +14,34 @@ body {
     overflow-y: scroll;
     background-color: #fafafa;
 }
+.bg_player, .bg_player_mask, body, html {
+    width: 100%;
+    height: 100%;
+    /*overflow: hidden;*/
+}
+audio {
+    z-index: 5;
+}
+.bg_player, .bg_player_mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bg_player_mask {
+    background-color: #292a2b;
+    background-color: rgba(0,0,0,.35);
+    z-index: 2;
+}
+.bg_player {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    filter: blur(65px);
+    opacity: .6;
+    transform: translateZ(0);
+    background-image: url("../img/play/bg.png");
+}
 a {
     color: #000;
     text-decoration: none;
@@ -105,7 +133,7 @@ a {
 .btn_icon {
     display: inline-block;
     margin-right: 6px;
-    background-image: url("../play/icon_sprite.png");
+    background-image: url("../img/play/icon_sprite.png");
     background-repeat: no-repeat;
 }
 .btn_icon.icon_like {
@@ -145,14 +173,142 @@ a {
     opacity: 1;
     filter: none;
 }
-
-
-
-
-
-
-
-
+/* 主播放页面 */
+.sb_main {
+    position: relative;
+}
+.sb_overview {
+    margin-right: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.mod_songlist {
+    font-size: 14px;
+    overflow: hidden;
+    margin-right: 0;
+}
+.player_songlist_line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    opacity: .1;
+}
+.mod_songlist .songlist_header, .mod_songlist .songlist_item {
+    padding-left: 62px;
+}
+.sprite {
+    background-image: url("../img/play/icon_sprite.png");
+}
+.mod_songlist .songlist_edit {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    border: 1px solid #ccc;
+    background-position: -1000px;
+    border-color: rgba(225,225,225,.4);
+}
+.mod_songlist .songlist_edit input {
+    width: 14px;
+    height: 14px;
+}
+input[type="checkbox"]:checked .songlist_edit {
+    border-color: #fff;
+    background-position: -60px -80px;
+}
+.songlist_checkbox {
+    opacity: 0;
+}
+li {
+    list-style: none;
+}
+.songlist_header {
+    height: 50px;
+    line-height: 50px;
+    background-color: transparent;
+    color: inherit;
+}
+.songlist_header, .songlist_item {
+    position: relative;
+    padding-left: 46px;
+    padding-right: 95px;
+    height: 50px;
+    line-height: 50px;
+}
+.songlist_header_name, .songlist_songname {
+    float: left;
+    width: 68%;
+    position: relative;
+    white-space: normal;
+}
+.songlist_album, .songlist_artist, .songlist_header_album, .songlist_header_author {
+    float: left;
+    padding-left: 15px;
+    width: 26%;
+    box-sizing: border-box;
+}
+.songlist_header_time, .songlist_time {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    width: 50px;
+}
+.songlist_list {
+    overflow: hidden;
+    clear: both;
+}
+.songlist_album, .songlist_artist, .songlist_number, .songlist_other, .songlist_time {
+    line-height: 50px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+.songlist_number {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    color: inherit;
+    text-align: right;
+    width: 36px;
+}
+.songlist_item .mod_list_menu {
+    position: absolute;
+    right: -10px;
+    top: 7px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    height: 36px;
+}
+.mod_player a {
+    color: rgba(225,225,225,.8);
+}
+.list_menu_item {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+.list_menu_icon_play {
+    background-position: -80px 0;
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-image: url("../img/play/icon_list_menu.png");
+    background-repeat: no-repeat;
+}
+.songlist_list .songlist_songname:hover .mod_list_menu{
+    opacity: 1;
+}
+.list_menu_item:hover .list_menu_icon_play{
+    background-position: -120px 0 !important;
+}
 
 
 

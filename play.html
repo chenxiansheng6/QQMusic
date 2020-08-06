@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>QQ音乐-在线播放</title>
-    <link rel="icon" href="../img/ico.png" type="image/x-icon">
+    <link rel="icon" href="img/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="css/play.css">
 </head>
 <body class="os_mac">
 <h1 class="player_logo">
     <a href="//y.qq.com">
-        <img src="play/player_logo.png" class="player_logo_pic" alt="">
+        <img src="img/play/player_logo.png" class="player_logo_pic" alt="">
     </a>
 </h1>
 <div class="mod_player">
@@ -32,11 +32,92 @@
                     <i class="btn_icon icon_clear"></i>清空列表
                 </a>
             </div>
-            <div></div>
+            <div class="sb_main">
+                <div class="sb_overview">
+                    <div class="mod_songlist">
+                        <i class="player_songlist_line"></i>
+                        <ul class="songlist_header">
+                            <li class="songlist_edit sprite">
+                                <input type="checkbox" class="songlist_checkbox">
+                            </li>
+                            <li class="songlist_header_name">歌曲</li>
+                            <li class="songlist_header_author">歌手</li>
+                            <li class="songlist_header_time">时长</li>
+                        </ul>
+                        <i class="player_songlist_line"></i>
+                        <ul class="songlist_list">
+                            <li id="m0">
+                                <div class="songlist_item">
+                                    <div class="songlist_edit sprite">
+                                        <input type="checkbox" class="songlist_checkbox">
+                                    </div>
+                                    <div class="songlist_number">1</div>
+                                    <div class="songlist_songname">天外来物
+                                        <div class="mod_list_menu">
+                                            <a href="javascript:;" class="list_menu_item">
+                                                <i class="list_menu_icon_play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="songlist_artist">薛之谦</div>
+                                    <div class="songlist_time">04:17</div>
+                                </div>
+                                <i class="player_songlist_line"></i>
+                            </li>
+                            <li id="m1">
+                                <div class="songlist_item">
+                                    <div class="songlist_edit sprite">
+                                        <input type="checkbox" class="songlist_checkbox">
+                                    </div>
+                                    <div class="songlist_number">2</div>
+                                    <div class="songlist_songname">微光海洋
+                                        <div class="mod_list_menu">
+                                            <a href="javascript:;" class="list_menu_item">
+                                                <i class="list_menu_icon_play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="songlist_artist">周深</div>
+                                    <div class="songlist_time">03:58</div>
+                                </div>
+                                <i class="player_songlist_line"></i>
+                            </li>
+                            <li id="m2">
+                                <div class="songlist_item">
+                                    <div class="songlist_edit sprite">
+                                        <input type="checkbox" class="songlist_checkbox">
+                                    </div>
+                                    <div class="songlist_number">3</div>
+                                    <div class="songlist_songname">剑歌行
+                                        <div class="mod_list_menu">
+                                            <a href="javascript:;" class="list_menu_item">
+                                                <i class="list_menu_icon_play"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="songlist_artist">毛不易</div>
+                                    <div class="songlist_time">04:06</div>
+                                </div>
+                                <i class="player_songlist_line"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div></div>
         </div>
     </div>
 </div>
-
+<div class="bg_player_mask"></div>
+<div class="bg_player"></div>
+<audio id="music1" controls>
+    <source src="audio/1.mp3">
+</audio>
+<audio id="music2">
+    <source src="audio/2.mp3">
+</audio>
+<audio id="music3">
+    <source src="audio/3.mp3">
+</audio>
 </body>
 </html>
