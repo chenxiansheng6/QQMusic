@@ -175,7 +175,7 @@ li {
     overflow-x: scroll;
 }
 li.song-item {
-    display: inline-block;
+    display: inline-flex;
 }
 ::-webkit-scrollbar {
     display: none;
