@@ -246,18 +246,18 @@ li.song-item {
     font-size:0.24rem;
     display: none;
 }
-.rank_list_img{
+.rank_list_img {
     width: 2.05rem;
     height:100%;
     position: relative;
 }
-.special_text2{
+.special_text2 {
     color: rgba(26,26,26,1);
 }
-.special_text{
+.special_text {
     color: rgba(26,26,26,.5);
 }
-.rank_list_img > img{
+.rank_list_img > img {
     width: 2.1rem;
     height:100%;
     border-radius: 0 .2rem .2rem 0;
@@ -267,7 +267,7 @@ li.song-item {
 ul.rank_list {
     display: flex;
 }
-li.rank_list_item{
+li.rank_list_item {
     overflow: hidden;
     background-color: #fff;
     display: flex;
@@ -277,20 +277,20 @@ li.rank_list_item{
     width: 100%;
     justify-content: space-between;
 }
-.rank_song_list > li{
+.rank_song_list > li {
    overflow: hidden;
     margin: 0 .12rem .04rem;
     white-space: nowrap;
     width: 4.7rem;
     box-sizing: content-box;
 }
-.rank_list_text{
+.rank_list_text {
     flex-grow: 1;
     box-sizing: content-box;
     padding-left: 0.1rem;
     transform: scaleX(0.96);
 }
-div.rank_list_text > h2{
+div.rank_list_text > h2 {
     font-size: 0.33rem;
     text-indent: .12rem;
 }
