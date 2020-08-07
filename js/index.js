@@ -14,7 +14,7 @@ btn.onclick = function() {
     document.documentElement.scrollTop = 0
 };
 
-//登录的一些效果功能
+// 登录的一些效果功能
 let loginBtn = document.getElementsByClassName("top_login_link")[0];
 let LoginMethods = document.getElementsByClassName("QQ_Login");
 let LoginBody = document.getElementsByClassName("Login_body")[0];
@@ -42,7 +42,6 @@ CloseLogin.addEventListener("click",CloseLoginWindow,false);
 
 function openLoginWindow(){
     Login.style.display = "block";
-
 }
 loginBtn.addEventListener("click",openLoginWindow,false);
 
