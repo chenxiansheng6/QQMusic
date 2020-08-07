@@ -1,0 +1,63 @@
+.bg {
+    height: 922px;
+    background: url("../img/mymusic/bg.png") 50% no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+@media screen and (max-height: 800px) {
+    .bg {
+        height: 622px;
+    }
+}
+.profile_sub, .profile_sup {
+    background-image: url("../img/mymusic/profile_tit.png");
+    margin-left: auto;
+    margin-right: auto;
+}
+.profile_sup {
+    width: 735px;
+    height: 64px;
+    background-position: 0 0;
+    margin-top: 350px;
+}
+@media screen and (max-height: 800px) {
+    .profile_sup {
+        margin-top: 210px;
+    }
+}
+.profile_sub {
+    width: 345px;
+    height: 30px;
+    background-position: 0 -70px;
+    margin-top: 30px;
+    margin-bottom: 36px;
+}
+.login_btn {
+    display: block;
+    font-size: 20px;
+    height: 48px;
+    line-height: 48px;
+    width: 128px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid #31c27c;
+    background-color: #31c27c;
+    color: #fff;
+    border-radius: 2px;
+}
+.bg a:hover {
+    background-color: #2caf6f;
+    border-color: #2caf6f;
+    color: #fff;
+}
+.profile_sub, .profile_sup, .login_btn {
+    opacity: 0;
+    transform: translate(0,60px);
+    transition: all 1s;
+}
+.profile_sup {
+    transition-delay: .1s;
+}
+.profile_sub {
+    transition-delay: .2s;
+}
