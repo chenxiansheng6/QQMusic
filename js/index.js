@@ -7,7 +7,7 @@ window.onscroll = function() {
         btn.style.display= "block"
     }else {
         btn.style.display = "none"
-    }
+}
 };
 // 点击按钮回到顶部
 btn.onclick = function() {

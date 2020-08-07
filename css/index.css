@@ -1191,6 +1191,7 @@ a:hover {
 }
 .btn_bottom_top {
     bottom: 124px;
+    display: none;
 }
 .btn_bottom_top:before {
     content: "";
@@ -1246,7 +1247,7 @@ a:hover {
     left: 25%;
     z-index:1000;
     background-color: #fff;
-    top: 25%;
+    top: 20%;
     display: none;
 }
 .Login_body{
