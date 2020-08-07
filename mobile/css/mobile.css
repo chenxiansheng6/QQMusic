@@ -94,7 +94,6 @@ li {
 }
 /* 搜索框 */
 .search {
-    opacity: 0;
     display: flex;
     top: 2.1rem;
     position: relative;
@@ -118,7 +117,7 @@ li {
 }
 /* 主页面 */
 .main {
-    display:none;
+    display:block;
     position: relative;
     top: 2.6rem;
 }
@@ -253,6 +252,7 @@ li.song-item {
 .Top_main{
     margin-top:1.55rem;
     font-size:0.24rem;
+    display: none;
 }
 .rank_list_img{
     width: 2.05rem;
@@ -272,7 +272,6 @@ li.song-item {
 }
 ul.rank_list {
     display: flex;
-    justify-content: center;
 }
 li.rank_list_item{
     overflow: hidden;
@@ -320,7 +319,7 @@ span.update_daily {
     height: 10px;
     position: absolute;
     left: 138px;
-    bottom: 5px;
+    bottom: 15px;
     color: #fff;
     background-color: rgba(0,0,0,.4);
     line-height: 13px;

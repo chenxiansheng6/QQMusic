@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../css/iconfont.css">
 
 </head>
-<body id="fly">
+<body>
 <div class="header">
     <div class="header-top">
         <div class="top-box">
@@ -25,8 +25,8 @@
         </div>
     </div>
     <div class="header-bottom">
-        <a href="javascript:;" class="bottom-item current">推荐</a>
-        <a href="javascript:;" class="bottom-item">排行</a>
+        <a  class="bottom_item current">推荐</a>
+        <a  class="bottom_item">排行</a>
     </div>
 </div>
 <div class="search">
@@ -201,17 +201,6 @@
         <p class="text">联系电话：0755-86013388 QQ群：55209235</p>
     </div>
 </div>
-<<<<<<< HEAD
-<div class="footer-bottom">
-    <div class="bottom-box">
-        <span class="bottom-logo">
-                <img src="img/logo.svg" class="logo" alt="">
-        </span>
-        <p class="text">安装QQ音乐 发现更多精彩</p>
-    </div>
-</div>
-
-=======
 <div class="Top_main">
     <ul class="rank_list">
         <li class="rank_list_item">
@@ -254,9 +243,132 @@
              </div>
         </li>
     </ul>
+    <ul class="rank_list">
+        <li class="rank_list_item">
+             <div class="rank_list_text">
+                    <h2>飙升榜</h2>
+                    <ol class="rank_song_list">
+                        <li>
+                            <strong class="special_text2">
+                                1.
+                            </strong>
+                            <span>不知所措</span>
+                            -
+                            <span class="special_text">王靖雯不胖</span>
+                        </li>
+                        <li>
+                            <strong class="special_text2">
+                                2.
+                            </strong>
+                            <span>カムパネルラ (康贝瑞拉)</span>
+                            -
+                            <span class="special_text">米津玄師 (よねづ けんし)</span>
+                        </li>
+                        <li>
+                            <strong class="special_text2">
+                                3.
+                            </strong>
+                            <span>追梦赤子心</span>
+                            -
+                            <span class="special_text">GALA</span>
+                        </li>
+                    </ol>
+             </div>
+             <div class="rank_list_img clearfix">
+                <img src="img/topP1.jpg" alt="">
+                <span class="update_daily">每日更新</span>
+                <div class="play_count">
+                    <span class="iconfont">&#xe631;</span>
+                    <span>1920.0万</span>
+                </div>
+             </div>
+        </li>
+    </ul>
+    <ul class="rank_list">
+        <li class="rank_list_item">
+             <div class="rank_list_text">
+                    <h2>飙升榜</h2>
+                    <ol class="rank_song_list">
+                        <li>
+                            <strong class="special_text2">
+                                1.
+                            </strong>
+                            <span>不知所措</span>
+                            -
+                            <span class="special_text">王靖雯不胖</span>
+                        </li>
+                        <li>
+                            <strong class="special_text2">
+                                2.
+                            </strong>
+                            <span>カムパネルラ (康贝瑞拉)</span>
+                            -
+                            <span class="special_text">米津玄師 (よねづ けんし)</span>
+                        </li>
+                        <li>
+                            <strong class="special_text2">
+                                3.
+                            </strong>
+                            <span>追梦赤子心</span>
+                            -
+                            <span class="special_text">GALA</span>
+                        </li>
+                    </ol>
+             </div>
+             <div class="rank_list_img clearfix">
+                <img src="img/topP1.jpg" alt="">
+                <span class="update_daily">每日更新</span>
+                <div class="play_count">
+                    <span class="iconfont">&#xe631;</span>
+                    <span>1920.0万</span>
+                </div>
+             </div>
+        </li>
+    </ul>
 </div>
->>>>>>> b33c896... ddd
+<div class="footer-bottom">
+    <div class="bottom-box">
+        <span class="bottom-logo">
+                <img src="img/logo.svg" class="logo" alt="">
+        </span>
+        <p class="text">安装QQ音乐 发现更多精彩</p>
+    </div>
+</div>
+
+
+
 <script>
+    let choose = document.getElementsByClassName("bottom_item");
+    let recommand_part = document.getElementsByClassName("main")[0];
+    let rank_part = document.getElementsByClassName("Top_main")[0];
+    let search_part = document.getElementsByClassName("search")[0];
+    let rank = choose[1];
+    let recommand = choose[0];
+    recommand.addEventListener("click",function(){
+
+            recommand_part.style.display = "block";
+            rank_part.style.display = "none";
+            search_part.style.opacity = "1";
+
+            rank.style.color = "black";
+            rank.style.borderBottom = "none";
+
+            this.style.color = "#31c27c";
+            this.style.borderBottom = ".02rem solid #31c27c";
+    },false);
+    rank.addEventListener("click",function(){
+
+            recommand_part.style.display = "none";
+            rank_part.style.display = "block";
+            search_part.style.opacity = "0";
+
+            recommand.style.color = "black";
+            recommand.style.borderBottom ="none";
+
+            this.style.color = "#31c27c";
+            this.style.borderBottom = ".02rem solid #31c27c";
+    },false);
+
     (function () {
         function resizeBaseFontSize() {
             var rootHtml = document.documentElement,
