@@ -125,8 +125,9 @@ li {
     margin: 0 0 .3rem .4rem;
 }
 .song {
-    margin: 0 0 .5rem .3rem;
+    margin: 0 .25rem .5rem .25rem;
     white-space: nowrap;
+    display: inline-flex;
 }
 .icon-play {
     display: inline-block;
@@ -138,7 +139,7 @@ li {
 }
 .item-box {
     width: 2.1rem;
-    margin: 0 .05rem;
+    margin: 0 .1rem;
 }
 .song-pic {
     position: relative;
