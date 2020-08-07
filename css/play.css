@@ -91,7 +91,6 @@ a {
     bottom: 18%;
     width: 100%;
     min-height: 328px;
-    cursor: default;
 }
 .player_style_normal {
     margin-right: 440px;
@@ -309,7 +308,36 @@ li {
 .list_menu_item:hover .list_menu_icon_play{
     background-position: -120px 0 !important;
 }
-
+/* 歌曲信息 */
+.song_info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 340px;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+.song_pic {
+    display: block;
+    width: 186px;
+    height: 186px;
+    margin: auto;
+    position: relative;
+    top: 8%;
+}
+.song_pic img {
+    width: 186px;
+    height: 186px;
+}
+.info {
+    position: relative;
+    margin-top: 60px;
+}
+.info div {
+    height: 28px;
+}
 
 
 
