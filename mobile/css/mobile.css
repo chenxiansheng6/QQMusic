@@ -178,6 +178,15 @@ li {
 li.song-item {
     display: inline-flex;
 }
+.songlist-3 .song-pic .count {
+    position: absolute;
+    left: .12rem;
+    bottom: .12rem;
+    font-size: .4rem;
+    color: #fff;
+    background: none;
+    padding: 0 .12rem;
+}
 ::-webkit-scrollbar {
     display: none;
 }
@@ -199,7 +208,32 @@ li.song-item {
     display: flex;
     justify-content: center;
 }
-
+.footer-bottom {
+    position: fixed;
+    bottom: .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.bottom-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 .33rem;
+    background: #fff;
+    border-radius: .5rem;
+    height: .9rem;
+}
+.bottom-box .logo {
+    width: .5rem;
+    height: .5rem;
+    display: flex;
+    margin-right: .15rem;
+}
+.bottom-box .text {
+    font-size: .3rem;
+}
 
 
 
