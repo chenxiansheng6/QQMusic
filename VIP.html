@@ -47,19 +47,15 @@
                         </p>
                     </div>
                     <div class="box-content">
-                        <h2>绿钻豪华版</h2>
-                        <p>音乐，更优越</p>
-                        <a href="">
-                            立即开通
-                        </a>
-                    </div>
-                    <div class="banner-show-nav">
-                        <div class="container">
-                            <a href="#"><span class="spen1"></span></a>
-                            <a href="#"><span class="spen2"></span></a>
-                            <a href="#"><span class="spen3"></span></a>
+                        <div class="box-text1">
+                            <h2 class="show1 play"></h2>
                         </div>
+                        <div class="box-text2">
+                            <p class="show2 play"></p>
+                        </div>
+                        <a href="javascript:;" class="show3 play">立即开通</a>
                     </div>
+
                 </div>
             </div>
             <!-- 固定侧边栏 -->
@@ -112,8 +108,23 @@
                     </li>
                 </ul>
             </div>
+        </div>
+        <div class="banner-show-nav">
+            <div class="container">
+                <a href="#"><span class="spen1"></span></a>
+                <a href="#"><span class="spen2"></span></a>
+                <a href="#"><span class="spen3"></span></a>
+            </div>
+        </div>
     </div>
-    </div>
+<script>
+    window.onload = function () {
+        var play = document.getElementsByClassName("play");
+        for (let i = 0; i < play.length; i++) {
+            play[i].style.opacity = "1";
+            play[i].style.transform = "translate(0,0)";
+        }
+    };
+</script>
 </body>
-
 </html>
