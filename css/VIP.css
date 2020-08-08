@@ -14,7 +14,7 @@ body {
     left:0;
     width:100%;
     background-color: #1a2613;
-    background: url(../images/banner_thumb_1.jpg) no-repeat;
+    background: url(../img/VIP/banner_thumb_1.jpg) no-repeat;
     background-size: cover;
     height: 856px;
 }
@@ -115,8 +115,10 @@ body {
     border-bottom: 2px solid greenyellow;
     color: #fff;
 }
-.mask .box {
-    margin-left: 440px;
+.mask-box {
+    position: absolute;
+    top:0;
+    left: 405px;
 }
 .mod_nav ul {
     float: left;
@@ -173,7 +175,7 @@ body {
     display: block;
     width: 300px;
     height: 100px;
-    background: url(../images/sprite_index_banner.png) no-repeat;
+    background: url(../img/VIP/sprite_index_banner.png) no-repeat;
     background-position:-810px 15px ;
     /* background-size: 300px auto; */
 }
@@ -181,7 +183,7 @@ body {
     display: block;
     width: 300px;
     height: 100px;
-    background: url(../images/sprite_index_banner.png) no-repeat;
+    background: url(../img/VIP/sprite_index_banner.png) no-repeat;
     background-position:-810px -82px ;
     opacity: .2;
     /* background-size: 300px auto; */
@@ -193,7 +195,7 @@ body {
     display: block;
     width: 300px;
     height: 100px;
-    background: url(../images/sprite_index_banner.png) no-repeat;
+    background: url(../img/VIP/sprite_index_banner.png) no-repeat;
     background-position:-844px -185px ;
     opacity:.2;
     /* background-size: 300px auto; */
@@ -225,7 +227,7 @@ body {
 .next ul {
     width: 44px;
     height: 272px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: 0 -244px;
 }
 .next ul li {
@@ -237,7 +239,7 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: -274px -192px;
 }
 .next ul li:nth-child(1) a:hover .qq{
@@ -248,7 +250,7 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: -46px -244px;
 }
 .next ul li:nth-child(3) a {
@@ -256,7 +258,7 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: -78px -244px;
 }
 .next ul li:nth-child(4) a {
@@ -264,7 +266,7 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: -110px -244px;
 }
 .next ul li:nth-child(5) a {
@@ -272,7 +274,7 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: -142px -244px;
 }
 .next ul li:nth-child(1) a .qq {
@@ -287,7 +289,7 @@ body {
     opacity: 0;
     padding-right: 7px;
     padding-top: 10px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: 0 0;
     transition: all .3s;
    
@@ -324,7 +326,7 @@ body {
     opacity: 0;
     padding-right: 7px;
     padding-top: 10px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: 0 0;
     transition: all .3s;
    
@@ -358,7 +360,7 @@ body {
     opacity: 0;
     padding-right: 7px;
     padding-top: 10px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: -162px -192px;
     transition: all .3s; 
 }
@@ -377,7 +379,7 @@ body {
     opacity: 0;
     padding-right: 7px;
     padding-top: 10px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: -162px -192px;
     transition: all .3s; 
 }
@@ -396,7 +398,7 @@ body {
     opacity: 0;
     padding-right: 7px;
     padding-top: 10px;
-    background-image: url(../images/tool_bar.png);
+    background-image: url(../img/VIP/tool_bar.png);
     background-position: -162px -192px;
     transition: all .3s; 
 }
