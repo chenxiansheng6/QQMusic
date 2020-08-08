@@ -88,7 +88,7 @@ body {
    top:80px;
    left: 0;
    width: 100%;
-   height: 0px;
+   height: 0;
    background-color: pink;
    line-height: 45px;
    overflow: hidden;
@@ -111,12 +111,14 @@ body {
     margin-left: 10px;
     color: #fff;
 }
-.mask .box a:hover {
+.mask .mask-box a:hover {
     border-bottom: 2px solid greenyellow;
     color: #fff;
 }
-.mask .box {
-    margin-left: 440px;
+.mask-box {
+    position: absolute;
+    top:0;
+    left: 405px;
 }
 .mod_nav ul {
     float: left;
@@ -173,7 +175,7 @@ body {
     display: block;
     width: 300px;
     height: 100px;
-    background-image: url("../img/VIP/sprite_index_banner.png") ;
+    background-image: url("../img/VIP/sprite_index_banner.png");
     background-position:-810px 15px ;
     /* background-size: 300px auto; */
 }
@@ -193,7 +195,7 @@ body {
     display: block;
     width: 300px;
     height: 100px;
-    background-image: url("../img/VIP/sprite_index_banner.png") ;
+    background-image: url("../img/VIP/sprite_index_banner.png");
     background-position:-844px -185px ;
     opacity:.2;
     /* background-size: 300px auto; */
@@ -289,7 +291,6 @@ body {
     padding-top: 10px;
     background-image: url("../img/VIP/tool_bar.png");
     background-position: 0 0;
-   
 }
 .next ul li:nth-child(1) a .qq img {
     display: block;
@@ -332,7 +333,6 @@ body {
     width: 132px;
     height: 132px;
     margin: 8px auto 8px;
-   
 }
 .next ul li:nth-child(2) a .wx p {
     color: #fff45c;
@@ -347,7 +347,7 @@ body {
 .next ul li:nth-child(3) a .bul {
     position: absolute;
     right: 42px;
-    top: 0px;
+    top: 0;
     text-align: center;
     color: #fff;
     font-size: 14px;
