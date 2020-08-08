@@ -357,6 +357,7 @@ li {
     width: 66%;
     position: absolute;
     min-width: 450px;
+    z-index:100;
 }
 #progress_bar{
     opacity: 0.5;
@@ -385,12 +386,17 @@ a.btn_pause {
 a.btn_next{
     background-position: 0 -52px;
 }
-
 .function_bar{
     flex-grow:1;
     display: flex;
     align-items: baseline;
     justify-content:space-around;
+}
+audio{
+    position: absolute;
+    opacity: 0;
+    z-index: 5;
+    bottom: 0;
 }
 
 
