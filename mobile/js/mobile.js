@@ -4,6 +4,7 @@ let rank_part = document.getElementsByClassName("Top_main")[0];
 let search_part = document.getElementsByClassName("search")[0];
 let rank = choose[1];
 let recommand = choose[0];
+
 recommand.addEventListener("click",function(){
 
     recommand_part.style.display = "block";
@@ -16,6 +17,7 @@ recommand.addEventListener("click",function(){
     this.style.color = "#31c27c";
     this.style.borderBottom = ".02rem solid #31c27c";
 },false);
+
 rank.addEventListener("click",function(){
 
     recommand_part.style.display = "none";
@@ -28,6 +30,7 @@ rank.addEventListener("click",function(){
     this.style.color = "#31c27c";
     this.style.borderBottom = ".02rem solid #31c27c";
 },false);
+
 
 (function () {
     function resizeBaseFontSize() {
