@@ -111,7 +111,7 @@ body {
     margin-left: 10px;
     color: #fff;
 }
-.mask .box a:hover {
+.mask .mask-box a:hover {
     border-bottom: 2px solid greenyellow;
     color: #fff;
 }
