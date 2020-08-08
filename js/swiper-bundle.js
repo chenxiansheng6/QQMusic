@@ -8201,11 +8201,11 @@
       if (!swiper.history.initialized || !swiper.params.history.enabled) return;
       var location;
 
-      if (swiper.params.url) {
-        location = new URL(swiper.params.url);
-      } else {
-        location = window.location;
-      }
+      // if (swiper.params.url) {
+      //   location = new URL(swiper.params.url);
+      // } else {
+      //   location = window.location;
+      // }
 
       var slide = swiper.slides.eq(index);
       var value = History.slugify(slide.attr('data-history'));
@@ -9274,4 +9274,3 @@
   return Swiper;
 
 })));
-//# sourceMappingURL=swiper-bundle.js.map
