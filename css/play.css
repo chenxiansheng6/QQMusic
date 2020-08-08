@@ -342,6 +342,51 @@ li {
 
 
 
+.control_btn{
+    left: 65px;
+    bottom:35px;
+    width: 66%;
+    position: absolute;
+    min-width: 450px;
+}
+#progress_bar{
+    opacity: 0.5;
+    height: 8px;
+    width: 70%;
+}
+.function_btn {
+    width: 24%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.function_btn  a {
+    width: 20px;
+    height:20px;
+    background-image: -webkit-image-set(url(../img/play/player_picture.png?max_age=2592000&v=f051617…&v=f051617…) 1x,url(../img/play/player_picture.png@2x.png?max_age=2592000&v=f051617…&v=f051617…&v=19a355a…) 2x);
+}
+a.btn_pre{
+    background-position: 0 -29px;
+}
+a.btn_pause {
+    width: 21px;
+    height: 29px;
+}
+a.btn_next{
+    background-position: 0 -52px;
+}
+
+.function_bar{
+    flex-grow:1;
+    display: flex;
+    align-items: baseline;
+    justify-content:space-around;
+}
+
+
+
+
 
 
 
