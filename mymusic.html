@@ -240,9 +240,9 @@
 <script>
     window.onload = function () {
         var pro = document.getElementsByClassName("profile");
-        for (let i = 0; i < pro.length; i++) {
-            pro[i].style.opacity = "1";
-            pro[i].style.transform = "translate(0,0)";
+        for (let item of pro) {
+            item.style.opacity = "1";
+            item.style.transform = "translate(0,0)";
         }
     };
 </script>

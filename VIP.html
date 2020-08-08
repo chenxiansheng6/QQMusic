@@ -120,9 +120,9 @@
 <script>
     window.onload = function () {
         var play = document.getElementsByClassName("play");
-        for (let i = 0; i < play.length; i++) {
-            play[i].style.opacity = "1";
-            play[i].style.transform = "translate(0,0)";
+        for (let item of play) {
+            item.style.opacity = "1";
+            item.style.transform = "translate(0,0)";
         }
     };
 </script>
