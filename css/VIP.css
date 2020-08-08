@@ -1,0 +1,408 @@
+body {
+    min-width: 1200px;
+}
+/* 头部 */
+.box {
+    width:100%;
+    height: 856px;
+}
+
+.header {
+    position: absolute;
+    z-index: 900;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: #1a2613;
+    background: url(../images/banner_thumb_1.jpg) no-repeat;
+    background-size: cover;
+    height: 856px;
+}
+.box-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -250px;
+    margin-top: -25px;
+    width: 500px;
+    height: 234px;
+    z-index: 66;
+    text-align: center;
+    /* background-color: #42a41b; */
+    opacity: 1;
+}
+.box-content h2{
+    width: 500px;
+    height: 110px;
+    font-weight: 400;
+    font-size: 80px;
+    color: #a0c5e8;
+    /* margin: 10px 10px; */
+    /* background-color: pink; */
+}
+.box-content p {
+    width: 500px;
+    height: 33px;
+    font-size: 20px;
+    color: #a0c5e8;
+    /* background-color: aqua; */
+}
+.box-content a {
+    display: block;
+    width: 320px;
+    height: 64px;
+    background-color: green;
+    border: 1px solid #333;
+    border-radius: 32px;
+    margin: 18px auto;
+    font-size: 35px;
+    color:#a0c5e8;
+    text-decoration: none;
+}
+.container {
+    height: 80px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.navbar {
+    /* position: fixed; */
+    height: 80px;
+    z-index: 850;
+    background-color: #1a2613;
+}
+.container {
+    height: 80px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.logo {
+    float: left;
+}
+.mod_nav {
+    float: left;
+    height: 80px;
+    font-size: 18px;
+}
+.mask {
+   position: absolute;
+   top:80px;
+   left: 0;
+   width: 100%;
+   height: 0px;
+   background-color: pink;
+   line-height: 45px;
+   overflow: hidden;
+   background-color:rgba(0,0,0,.1);
+   transition: all .3s;
+}
+.mod_nav ul .css:hover .mask {
+    height: 45px;
+}
+/* .mask li {
+    padding: 0 10px;
+} */
+.mask a {
+    float: left;
+    *display: inline;
+    font-size: 14px;
+    height: 42px;
+    line-height: 42px;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    color: #fff;
+}
+.mask .box a:hover {
+    border-bottom: 2px solid greenyellow;
+    color: #fff;
+}
+.mask .box {
+    margin-left: 440px;
+}
+.mod_nav ul {
+    float: left;
+    height: 80px;
+    font-size: 18px;  
+}
+
+.mod_nav ul li {
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    margin-left: 32px;
+}
+.mod_nav ul li .green {
+    color:#42a41b ;
+}
+.mod_nav ul li a {
+    text-decoration: none;
+    color:#f6f6f6;
+}
+.mod_nav ul li a:hover {
+    color: #42a41b;
+}
+.right_nav{
+    float:right;
+    font-size: 12px;
+    height: 80px;
+    line-height: 80px;
+}
+.right_nav p a {
+    color: #42a41b;
+    text-decoration: none;
+}
+.right_nav p a:hover {
+    text-decoration: underline;
+}
+
+.banner-show-nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 164px;
+    background-color:rgba(0,0,0,.1);
+    /* background-color: hotpink; */
+}
+.banner-show-nav a {
+    float: left;
+    width: 300px;
+    height: 164px;
+    /* background-color: aqua; */
+}
+.banner-show-nav a .spen1 {
+    display: block;
+    width: 300px;
+    height: 100px;
+    background: url(../images/sprite_index_banner.png) no-repeat;
+    background-position:-810px 15px ;
+    /* background-size: 300px auto; */
+}
+.banner-show-nav a .spen2 {
+    display: block;
+    width: 300px;
+    height: 100px;
+    background: url(../images/sprite_index_banner.png) no-repeat;
+    background-position:-810px -82px ;
+    opacity: .2;
+    /* background-size: 300px auto; */
+}
+.banner-show-nav a .spen2:hover {
+    opacity: 0.5;
+}
+.banner-show-nav a .spen3 {
+    display: block;
+    width: 300px;
+    height: 100px;
+    background: url(../images/sprite_index_banner.png) no-repeat;
+    background-position:-844px -185px ;
+    opacity:.2;
+    /* background-size: 300px auto; */
+}
+.banner-show-nav a .spen3:hover {
+    opacity: .5;
+}
+
+/* 内容核心 */
+.seaction-mod {
+    width: 100%;
+    height: 980px;
+    
+}
+.mod-bg {
+    height: 740px;
+    width: 100%;
+    /* background: url(../images/feature_thumb_2.jpg) no-repeat; */
+}
+.next {
+    position: fixed;
+    z-index: 100;
+    right: 2.5%;
+    top: 50%;
+    width: 44px;
+    height: 412px;
+    margin-top: -206px;
+}
+.next ul {
+    width: 44px;
+    height: 272px;
+    background-image: url(../images/tool_bar.png);
+    background-position: 0 -244px;
+}
+.next ul li {
+    display: block;
+    padding: 12px 7px;
+}
+.next ul li:nth-child(1) a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/tool_bar.png);
+    background-position: -274px -192px;
+}
+.next ul li:nth-child(1) a:hover .qq{
+    opacity: 1;
+}
+.next ul li:nth-child(2) a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/tool_bar.png);
+    background-position: -46px -244px;
+}
+.next ul li:nth-child(3) a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/tool_bar.png);
+    background-position: -78px -244px;
+}
+.next ul li:nth-child(4) a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/tool_bar.png);
+    background-position: -110px -244px;
+}
+.next ul li:nth-child(5) a {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../images/tool_bar.png);
+    background-position: -142px -244px;
+}
+.next ul li:nth-child(1) a .qq {
+    position: absolute;
+    right: 42px;
+    top: -85px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 153px;
+    height: 232px;
+    opacity: 0;
+    padding-right: 7px;
+    padding-top: 10px;
+    background-image: url(../images/tool_bar.png);
+    background-position: 0 0;
+    transition: all .3s;
+   
+}
+.next ul li:nth-child(1) a .qq img {
+    display: block;
+    width: 132px;
+    height: 132px;
+    margin: 8px auto 8px;
+   
+}
+.next ul li:nth-child(1) a .qq p {
+    color: #fff45c;
+    font-size: 16px;
+    line-height: 1.4;
+    
+}
+.next ul li:nth-child(1) a .qq span {
+    color: #fff;
+    font-size: 22px; 
+}
+.next ul li:nth-child(2) a:hover .wx {
+    opacity: 1;
+}
+.next ul li:nth-child(2) a .wx {
+    position: absolute;
+    right: 42px;
+    top: -85px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 153px;
+    height: 232px;
+    opacity: 0;
+    padding-right: 7px;
+    padding-top: 10px;
+    background-image: url(../images/tool_bar.png);
+    background-position: 0 0;
+    transition: all .3s;
+   
+}
+.next ul li:nth-child(2) a .wx img {
+    display: block;
+    width: 132px;
+    height: 132px;
+    margin: 8px auto 8px;
+   
+}
+.next ul li:nth-child(2) a .wx p {
+    color: #fff45c;
+    font-size: 16px;
+    line-height: 1.4;
+    
+}
+.next ul li:nth-child(2) a .wx span {
+    color: #fff;
+    font-size: 22px; 
+}
+.next ul li:nth-child(3) a .bul {
+    position: absolute;
+    right: 42px;
+    top: 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 102px;
+    height: 38px;
+    opacity: 0;
+    padding-right: 7px;
+    padding-top: 10px;
+    background-image: url(../images/tool_bar.png);
+    background-position: -162px -192px;
+    transition: all .3s; 
+}
+.next ul li:nth-child(3) a:hover .bul {
+    opacity: 1;
+}
+.next ul li:nth-child(4) a .duih {
+    position: absolute;
+    right: 42px;
+    top: 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 102px;
+    height: 38px;
+    opacity: 0;
+    padding-right: 7px;
+    padding-top: 10px;
+    background-image: url(../images/tool_bar.png);
+    background-position: -162px -192px;
+    transition: all .3s; 
+}
+.next ul li:nth-child(4) a:hover .duih{
+    opacity: 1;
+}
+.next ul li:nth-child(5) a .kf {
+    position: absolute;
+    right: 42px;
+    top: 0px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    width: 102px;
+    height: 38px;
+    opacity: 0;
+    padding-right: 7px;
+    padding-top: 10px;
+    background-image: url(../images/tool_bar.png);
+    background-position: -162px -192px;
+    transition: all .3s; 
+}
+.next ul li:nth-child(5) a:hover .kf{
+    opacity: 1;
+}
+.two {
+    height: 1100px;
+}
