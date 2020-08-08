@@ -365,6 +365,7 @@ li {
     width: 70%;
 }
 .function_btn {
+
     width: 24%;
     display: flex;
     align-items: center;
@@ -380,6 +381,7 @@ a.btn_pre{
     background-position: 0 -29px;
 }
 a.btn_pause {
+    transition: all 0.2s;
     width: 21px;
     height: 29px;
 }
