@@ -5,6 +5,8 @@
     <title>QQ音乐-在线播放</title>
     <link rel="icon" href="img/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="css/play.css">
+    <script type="text/javascript" src="js/jquery.js">
+    </script>
 </head>
 <body class="os_mac">
 <h1 class="player_logo">
@@ -175,15 +177,24 @@
 <div class="bg_player"></div>
 <div class="control_btn function_bar">
     <div class="function_btn">
-        <a href="javascript:;" class="btn_pre"></a>
-        <a href="javascript:;" class="btn_pause"></a>
-        <a href="javascript:;" class="btn_next"></a>
+        <a  class="btn_pre btn_J" ></a>
+        <a  class="btn_pause btn_J"></a>
+        <a  class="btn_next btn_J"></a>
     </div>
     <progress value="0" max="100" id="progress_bar"></progress>
 </div>
+<!-- <video autoplay="autoplay">
+     <source src="audio/1.mp3" type="" media="">
+</video> -->
 
-<script type="text/javascript" src="">
 
+    <audio controls onclick="a()">
+     <source src="audio/1.mp3" type="" media="">
+    </audio>
+
+
+
+<script type="text/javascript" src="js/play.js">
 </script>
 </body>
 </html>
