@@ -19,9 +19,11 @@ let song_name = messages.children[0],song_artist = messages.children[1],song_alb
 
 
 let songName = document.getElementsByClassName("songlist_songname");
-let songArtise = document.getElementsByClassName("songlist_artist");
+let songArtist = document.getElementsByClassName("songlist_artist");
 let songTime = document.getElementsByClassName("songlist_time");
 let songNumber = document.getElementsByClassName("songlist_number");
+
+
 
 
 /* 播放键的功能 */
@@ -36,33 +38,11 @@ let count = 0;
 
 
 pau_pl_btn.addEventListener("click",Cancel,false);
-nex_btn.addEventListener("click",function(){
-    count ++;
-    if(count == songNumber.length)
-    {
-        count = 0;
-    }
-    audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
-    audio.load();
-    judged_to_play();
-
-},false);
-
-pre_btn.addEventListener("click",function(){
-    count --;
-    if(count == -1)
-    {
-        count = songNumber.length - 1;
-    }
-    audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
-    audio.load();
-    judged_to_play();
-
-},false);
-
+nex_btn.addEventListener("click",next_song,false);
+pre_btn.addEventListener("click",previous_song,false);
 
 function Cancel(){
-    audio.paused == true ? judged_to_play() :judged_to_pause();
+        audio.paused == true ? judged_to_play() :judged_to_pause();
 }
 function judged_to_play(){
         pau_pl_btn.style.backgroundPositionX = -28+"px";
@@ -72,7 +52,33 @@ function judged_to_pause(){
         pau_pl_btn.style.backgroundPositionX = 0+"px";
         audio.pause();
 }
-
+function next_song(){
+    count ++;
+    if(count == songNumber.length)
+    {
+        count = 0;
+    }
+    acquire_song_message(count);
+    audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
+    audio.load();
+    judged_to_play();
+}
+function previous_song(){
+     count --;
+    if(count == -1)
+    {
+        count = songNumber.length-1;
+    }
+    acquire_song_message(count);
+    audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
+    audio.load();
+    judged_to_play();
+}
+function acquire_song_message(count){
+    song_name.innerText = "歌曲名: "+songName.item(count).innerText;
+    song_artist.innerText = "歌手名: "+songArtist.item(count).innerText;
+    song_album.innerText = "专辑名: "+songName.item(count).innerText;
+}
 
 
 
