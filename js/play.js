@@ -56,7 +56,10 @@ let count = 0;
 
 
 pau_pl_btn.addEventListener("click",Cancel,false);
+pau_pl_btn.addEventListener("click",ffff,false);
 nex_btn.addEventListener("click",next_song,false);
+nex_btn.addEventListener("click",ffff2,false);
+pre_btn.addEventListener("click",ffff2.false);
 pre_btn.addEventListener("click",previous_song,false);
 
 
@@ -67,8 +70,8 @@ function getSongTimes(count){
     return newMax;
 }
 let seconds = 0,minutes = 0;
+let temp = 0;
 
-pau_pl_btn.addEventListener("click",ffff,false);
 
 // let fuck = setInterval(function(){
 //         if(!audio.paused&&(parseInt(60*minutes+seconds)<getSongTimes(count))){
@@ -82,7 +85,11 @@ pau_pl_btn.addEventListener("click",ffff,false);
 //         bar_song_start.innerText = `0${minutes}:${seconds}`;
 //         }
 // },1000);
-
+function ffff2(){
+    seconds = 0;
+    minutes = 0;
+    ffff();
+}
 function ffff(){
         let aa = setInterval(function(){
         if(audio.paused){
