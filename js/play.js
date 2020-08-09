@@ -15,8 +15,17 @@
 
 let messages = document.getElementsByClassName("info")[0];
 
+/* 进度条占位符的信息显示 */
+
+let bar_song_name = document.getElementsByClassName("bar_song_name")[0];
+let bar_song_artist = document.getElementsByClassName("bar_song_artist")[0];
+let bar_song_time_end = document.getElementsByClassName("bar_song_time_end")[0];
+
+
+/* 右边占位符的信息显示 */
 let song_name = messages.children[0],song_artist = messages.children[1],song_album = messages.children[2];
 
+/* 播放键位 */
 
 let songName = document.getElementsByClassName("songlist_songname");
 let songArtist = document.getElementsByClassName("songlist_artist");
@@ -78,6 +87,10 @@ function acquire_song_message(count){
     song_name.innerText = "歌曲名: "+songName.item(count).innerText;
     song_artist.innerText = "歌手名: "+songArtist.item(count).innerText;
     song_album.innerText = "专辑名: "+songName.item(count).innerText;
+
+    bar_song_name.innerText = songName.item(count).innerText;
+    bar_song_artist.innerText = songArtist.item(count).innerText;
+    bar_song_time_end.innerText = songTime.item(count).innerText;
 }
 
 
