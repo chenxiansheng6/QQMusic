@@ -1,15 +1,3 @@
-/**
- *
- * @authors Marte (iqianduan@126.com)
- * @date    2020-08-08 07:59:25
- * @version $Id$
- */
-
-
-
-
-
-
 /*  播放时候显示对应的歌曲信息  */
 
 let messages = document.getElementsByClassName("info")[0];
@@ -42,6 +30,8 @@ let songName = document.getElementsByClassName("songlist_songname");
 let songArtist = document.getElementsByClassName("songlist_artist");
 let songTime = document.getElementsByClassName("songlist_time");
 let songNumber = document.getElementsByClassName("songlist_number");
+let songBg = document.getElementsByClassName("song_bg")[0];
+let Bg = document.getElementsByClassName("bg_player")[0];
 
 
 /* 播放键的功能 */
@@ -125,6 +115,8 @@ function next_song(){
     }
     acquire_song_message(count);
     audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
+    songBg.setAttribute("src","../QQMusic/img/play/bg/bg"+count+".png");
+    Bg.setAttribute("src","../QQMusic/img/play/bg/bg"+count+".png");
     audio.load();
     judged_to_play();
 }
@@ -136,6 +128,8 @@ function previous_song(){
     }
     acquire_song_message(count);
     audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
+    songBg.setAttribute("src","../QQMusic/img/play/bg/bg"+count+".png");
+    Bg.setAttribute("src","../QQMusic/img/play/bg/bg"+count+".png");
     audio.load();
     judged_to_play();
 }

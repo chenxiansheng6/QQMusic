@@ -40,7 +40,6 @@ audio {
     filter: blur(65px);
     opacity: .6;
     transform: translateZ(0);
-    background-image: url("../img/play/bg.png");
 }
 a {
     color: #000;
@@ -321,7 +320,7 @@ li {
 /* 歌曲信息 */
 .song_info {
     position: absolute;
-    top: 0;
+    top: 80px;
     right: 0;
     width: 340px;
     height: 100%;
