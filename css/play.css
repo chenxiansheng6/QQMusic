@@ -11,13 +11,13 @@ body, button, input, select, textarea, th {
 }
 body {
     min-width: 1100px;
-    overflow-y: scroll;
     background-color: #fafafa;
 }
 .bg_player, .bg_player_mask, body, html {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 audio {
     z-index: 5;
@@ -46,8 +46,8 @@ a {
     color: #000;
     text-decoration: none;
 }
-@media screen and (max-width: 1100px)  {
-    body{
+@media screen and (max-width: 1100px) {
+    body {
         min-width: 1000px;
     }
 }
@@ -358,33 +358,28 @@ li {
     background: url("../img/play/album_cover_player.png") 0 0 no-repeat;
 }
 
-
-
-
-.control_btn{
+.control_btn {
     left: 7%;
     bottom: 8%;
     width: 90%;
     position: absolute;
     min-width: 450px;
     z-index: 100;
-    margin-left:10px;
 }
-.controls_box{
+.controls_box {
     height: 8px;
-    width: 70%;
+    width: 61%;
     min-width:450px;
 }
-#progress_bar{
+#progress_bar {
     height:5px;
     width: 100%;
     flex-grow: 1;
-    margin-right: 125px;
     opacity: .8;
     margin-left: 30px;
 }
-@media screen and ( max-width:1100px){
-    #progress_bar{
+@media screen and ( max-width:1100px) {
+    #progress_bar {
         width: 250px !important;
     }
     .dotted_P{
@@ -392,8 +387,8 @@ li {
         margin-left:4%;
     }
 }
-@media screen and ( max-width:700px){
-    .dotted_P{
+@media screen and ( max-width:700px) {
+    .dotted_P {
         left:0 !important;
         margin-left:100px;
     }
@@ -416,7 +411,6 @@ li {
 a.btn_pre {
     background-position: 0 -29px;
 }
-
 a.btn_pause {
     transition: all 0.2s;
     width: 21px;
@@ -433,15 +427,15 @@ a.btn_pre:hover, a.btn_pause:hover, a.btn_next:hover {
     align-items: baseline;
     justify-content:space-around;
 }
-audio{
+audio {
     position: absolute;
     opacity: 0;
     z-index: 5;
     bottom: 0;
 }
-.bar_info{
+.bar_info {
     position: absolute;
-    bottom: 0px;
+    bottom: -5px;
     width: 48%;
     min-width: 300px;
     left: 12.8%;
@@ -449,11 +443,17 @@ audio{
     justify-content: space-between;
     color: rgba(225,225,225,.8);
 }
-.dotted_P{
+@media screen and (max-width: 1100px) {
+    .bar_info {
+        width: 44%;
+        left: 16.8%;
+    }
+}
+.dotted_P {
     bottom: -233%;
     left: 12.8%;
     width: 10px;
-    background-position: 0px -170px;
+    background-position: 0 -170px;
     height: 10px;
     position: absolute;
     z-index: 100;
@@ -461,9 +461,49 @@ audio{
     color: #fff;
     border-radius: 50%;
 }
-
-
-
-
-
+.btn_list {
+    width: 400px;
+    height: 40px;
+    position: absolute;
+    left: 64%;
+    top: -10px;
+}
+.btn1, .btn2, .btn3, .btn4 {
+    position: absolute;
+    background-image: url("../img/play/player_picture.png");
+    opacity: .8;
+}
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover {
+    opacity: 1;
+}
+.btn1 {
+    width: 26px;
+    height: 25px;
+    top: 10px;
+    background-position: 0 -205px;
+}
+.btn2 {
+    width: 23px;
+    height: 21px;
+    top: 12px;
+    left: 50px;
+    background-position: 0 -96px;
+}
+.btn2:hover {
+    background-position: -30px -96px;
+}
+.btn3 {
+    width: 22px;
+    height: 21px;
+    top: 12px;
+    left: 100px;
+    background-position: 0 -120px;
+}
+.btn4 {
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    left: 150px;
+    background-position: 0 -400px;
+}
 
