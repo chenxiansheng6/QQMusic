@@ -367,6 +367,7 @@ li {
     min-width:450px;
 }
 #progress_bar{
+    height:10px;
     width: 100%;
     flex-grow: 1;
     margin-right:90px;
@@ -386,7 +387,6 @@ li {
         margin-left:100px;
     }
 }
-
 
 .function_btn {
     width: 23%;
@@ -435,7 +435,7 @@ audio{
     color: rgba(225,225,225,.8);
 }
 .dotted_P{
-    bottom: -177%;
+    bottom: -200%;
     left: 11.5%;
     width: 10px;
     background-position: 0px -170px;

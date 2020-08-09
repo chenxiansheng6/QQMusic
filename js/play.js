@@ -18,11 +18,20 @@ let messages = document.getElementsByClassName("info")[0];
 
 let bar_song_name = document.getElementsByClassName("bar_song_name")[0];
 let bar_song_artist = document.getElementsByClassName("bar_song_artist")[0];
+let bar_song_start = document.getElementsByClassName("bar_song_time_start")[0];
 let bar_song_time_end = document.getElementsByClassName("bar_song_time_end")[0];
 
 
 /* 进度条及原点图标的信息显示 */
 let progressBar = document.getElementById("progress_bar");
+
+// let alarm = setInterval(function(){
+//     if(progressBar.value == 50){
+//         clearInterval(alarm);
+//     }
+//     progressBar.value +=1;
+// },1000);
+
 
 /* 右边占位符的信息显示 */
 let song_name = messages.children[0],song_artist = messages.children[1],song_album = messages.children[2];
@@ -33,8 +42,6 @@ let songName = document.getElementsByClassName("songlist_songname");
 let songArtist = document.getElementsByClassName("songlist_artist");
 let songTime = document.getElementsByClassName("songlist_time");
 let songNumber = document.getElementsByClassName("songlist_number");
-
-
 
 
 /* 播放键的功能 */
@@ -52,6 +59,27 @@ pau_pl_btn.addEventListener("click",Cancel,false);
 nex_btn.addEventListener("click",next_song,false);
 pre_btn.addEventListener("click",previous_song,false);
 
+
+function getSongTimes(count){
+    let temp = songTime.item(count).innerText;
+    let tempArr = temp.split(":");
+    let newMax = parseInt(tempArr[0]) * 60 + parseInt(tempArr[1]);
+    return newMax;
+}
+let seconds = 0,minutes = 0;
+let fuck = setInterval(function(){
+        if(!audio.paused&&(parseInt(60*minutes+seconds)<getSongTimes(count))){
+            progressBar.value += 100/getSongTimes(count);
+        if(seconds == 60)
+        {
+            seconds = 0;
+            minutes +=1;
+        }
+        else {seconds++;}
+        bar_song_start.innerText = `0${minutes}:${seconds}`;
+        }
+},1000);
+
 function Cancel(){
         audio.paused == true ? judged_to_play() :judged_to_pause();
 }
@@ -62,6 +90,7 @@ function judged_to_play(){
 function judged_to_pause(){
         pau_pl_btn.style.backgroundPositionX = 0+"px";
         audio.pause();
+        clearInterval(fuck);
 }
 function next_song(){
     count ++;
