@@ -14,8 +14,23 @@
 
 
 let messages = document.getElementsByClassName("info")[0];
-console.log(messages);
-let song_name = messages.children[0],song_artise = messages.children[1],song_album = messages.children[2];
+
+/* 进度条占位符的信息显示 */
+
+let bar_song_name = document.getElementsByClassName("bar_song_name")[0];
+let bar_song_artist = document.getElementsByClassName("bar_song_artist")[0];
+let bar_song_time_end = document.getElementsByClassName("bar_song_time_end")[0];
+
+
+/* 右边占位符的信息显示 */
+let song_name = messages.children[0],song_artist = messages.children[1],song_album = messages.children[2];
+
+/* 播放键位 */
+
+let songName = document.getElementsByClassName("songlist_songname");
+let songArtist = document.getElementsByClassName("songlist_artist");
+let songTime = document.getElementsByClassName("songlist_time");
+let songNumber = document.getElementsByClassName("songlist_number");
 
 
 
@@ -28,39 +43,15 @@ let pau_pl_btn = function_btn[1];
 let nex_btn = function_btn[2];
 let audio = document.getElementsByTagName("audio")[0];
 let source = document.getElementsByTagName("source")[0];
-let count = 2;
+let count = 0;
 
 
 pau_pl_btn.addEventListener("click",Cancel,false);
-nex_btn.addEventListener("click",function(){
-    if(count == 4)
-    {
-        count = 1;
-    }
-    audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
-    audio.load();
-    judged_to_play();
-    count ++;
-},false);
-
-pre_btn.addEventListener("click",function(){
-    if(audio.paused){
-        pau_pl_btn.style.backgroundPositionX = -28+"px";
-        audio.play();
-    }
-    if(count == 0)
-    {
-        count = 3;
-    }
-    audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
-    audio.load();
-    judged_to_play();
-    count --;
-},false);
-
+nex_btn.addEventListener("click",next_song,false);
+pre_btn.addEventListener("click",previous_song,false);
 
 function Cancel(){
-    audio.paused == true ? judged_to_play() :judged_to_pause();
+        audio.paused == true ? judged_to_play() :judged_to_pause();
 }
 function judged_to_play(){
         pau_pl_btn.style.backgroundPositionX = -28+"px";
@@ -70,7 +61,37 @@ function judged_to_pause(){
         pau_pl_btn.style.backgroundPositionX = 0+"px";
         audio.pause();
 }
+function next_song(){
+    count ++;
+    if(count == songNumber.length)
+    {
+        count = 0;
+    }
+    acquire_song_message(count);
+    audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
+    audio.load();
+    judged_to_play();
+}
+function previous_song(){
+     count --;
+    if(count == -1)
+    {
+        count = songNumber.length-1;
+    }
+    acquire_song_message(count);
+    audio.setAttribute("src","../QQMusic/audio/"+count+".mp3");
+    audio.load();
+    judged_to_play();
+}
+function acquire_song_message(count){
+    song_name.innerText = "歌曲名: "+songName.item(count).innerText;
+    song_artist.innerText = "歌手名: "+songArtist.item(count).innerText;
+    song_album.innerText = "专辑名: "+songName.item(count).innerText;
 
+    bar_song_name.innerText = songName.item(count).innerText;
+    bar_song_artist.innerText = songArtist.item(count).innerText;
+    bar_song_time_end.innerText = songTime.item(count).innerText;
+}
 
 
 
