@@ -49,7 +49,7 @@ pau_pl_btn.addEventListener("click",Cancel,false);
 pau_pl_btn.addEventListener("click",ffff,false);
 nex_btn.addEventListener("click",next_song,false);
 nex_btn.addEventListener("click",ffff2,false);
-pre_btn.addEventListener("click",ffff2.false);
+pre_btn.addEventListener("click",ffff2,false);
 pre_btn.addEventListener("click",previous_song,false);
 
 
@@ -97,7 +97,7 @@ function ffff(){
 },1000);}
 
 function Cancel(){
-        audio.paused == true ? judged_to_play() :judged_to_pause();
+        audio.paused == true ? judged_to_play() : judged_to_pause();
 }
 function judged_to_play(){
         pau_pl_btn.style.backgroundPositionX = -28+"px";
