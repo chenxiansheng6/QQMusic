@@ -10,6 +10,17 @@ body {
     padding: 0;
     box-sizing: border-box
 }
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+    background: 0 0;
+}
 li {
     list-style: none
 }
@@ -100,7 +111,6 @@ li {
    left: 0;
    width: 100%;
    height: 0;
-   background-color: pink;
    line-height: 45px;
    overflow: hidden;
    background-color:rgba(0,0,0,.1);
@@ -109,9 +119,6 @@ li {
 .mod_nav ul .css:hover .mask {
     height: 45px;
 }
-/* .mask li {
-    padding: 0 10px;
-} */
 .mask a {
     float: left;
     *display: inline;
@@ -129,7 +136,7 @@ li {
 .mask-box {
     position: absolute;
     top:0;
-    left: 275px;
+    left: 438px;
 }
 .mod_nav ul {
     float: left;
