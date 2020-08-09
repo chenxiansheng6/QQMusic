@@ -12,7 +12,6 @@
 
 /*  播放时候显示对应的歌曲信息  */
 
-
 let messages = document.getElementsByClassName("info")[0];
 
 /* 进度条占位符的信息显示 */
@@ -21,6 +20,9 @@ let bar_song_name = document.getElementsByClassName("bar_song_name")[0];
 let bar_song_artist = document.getElementsByClassName("bar_song_artist")[0];
 let bar_song_time_end = document.getElementsByClassName("bar_song_time_end")[0];
 
+
+/* 进度条及原点图标的信息显示 */
+let progressBar = document.getElementById("progress_bar");
 
 /* 右边占位符的信息显示 */
 let song_name = messages.children[0],song_artist = messages.children[1],song_album = messages.children[2];

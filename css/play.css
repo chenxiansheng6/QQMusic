@@ -352,22 +352,47 @@ li {
 
 
 .control_btn{
-    left: 65px;
-    bottom:35px;
-    width: 66%;
+    left: 7%;
+    bottom: 8%;
+    width: 90%;
     position: absolute;
     min-width: 450px;
-    z-index:100;
+    z-index: 100;
+    margin-left:10px;
 }
-#progress_bar{
+.controls_box{
     opacity: 0.5;
     height: 8px;
     width: 70%;
-    position: relative;
+    min-width:450px;
 }
+#progress_bar{
+    width: 100%;
+    flex-grow: 1;
+    margin-right:90px;
+}
+@media screen and ( max-width:1100px){
+    #progress_bar{
+        width: 250px !important;
+    }
+    .dotted_P{
+        left:0;
+        margin-left:4%;
+    }
+}
+@media screen and ( max-width:700px){
+    .dotted_P{
+        left:0 !important;
+        margin-left:100px;
+    }
+}
+
+
 .function_btn {
-    width: 24%;
+    width: 23%;
     display: flex;
+    min-width:100px;
+    max-width: 200px;
     align-items: center;
     justify-content: space-around;
 }
@@ -388,7 +413,7 @@ a.btn_next{
     background-position: 0 -52px;
 }
 .function_bar{
-    flex-grow:1;
+
     display: flex;
     align-items: baseline;
     justify-content:space-around;
@@ -401,24 +426,23 @@ audio{
 }
 .bar_info{
     position: absolute;
-    bottom:11px;
-    width: 69%;
-    left: 216px;
+    bottom: 0px;
+    width: 52%;
+    min-width: 300px;
+    left: 12%;
     display: flex;
     justify-content: space-between;
     color: rgba(225,225,225,.8);
 }
-progress:before {
-    content: '';
-    left: -1px;
+.dotted_P{
+    bottom: -177%;
+    left: 11.5%;
     width: 10px;
     background-position: 0px -170px;
     height: 10px;
     position: absolute;
-    top: -1px;
     z-index: 100;
-    background-image: url(../img/play/player_picture.png?max_age=2592000&v=f051617…);
-    background-image: -webkit-image-set(url(../img/play/player_picture.png?max_age=2592000&v=f051617…&v=f051617…) 1x,url(../img/play/player_picture.png@2x.png?max_age=2592000&v=f051617…&v=f051617…&v=19a355a…) 2x);
+    background-color: #ffffff;
     color: #fff;
     border-radius: 50%;
 }
