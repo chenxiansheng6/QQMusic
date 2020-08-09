@@ -376,11 +376,12 @@ li {
     min-width:450px;
 }
 #progress_bar{
-    height:10px;
+    height:5px;
     width: 100%;
     flex-grow: 1;
-    margin-right: 90px;
+    margin-right: 125px;
     opacity: .8;
+    margin-left: 30px;
 }
 @media screen and ( max-width:1100px){
     #progress_bar{
@@ -441,16 +442,16 @@ audio{
 .bar_info{
     position: absolute;
     bottom: 0px;
-    width: 52%;
+    width: 48%;
     min-width: 300px;
-    left: 12%;
+    left: 12.8%;
     display: flex;
     justify-content: space-between;
     color: rgba(225,225,225,.8);
 }
 .dotted_P{
-    bottom: -200%;
-    left: 11.5%;
+    bottom: -233%;
+    left: 12.8%;
     width: 10px;
     background-position: 0px -170px;
     height: 10px;
