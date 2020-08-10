@@ -60,7 +60,7 @@ function getSongTimes(count){
     return newMax;
 }
 let seconds = 0,minutes = 0;
-let temp = 0;
+let temp = 1;
 
 
 // let fuck = setInterval(function(){
@@ -76,9 +76,14 @@ let temp = 0;
 //         }
 // },1000);
 function ffff2(){
+    for(let i = 0;i<=temp;i++){
+        clearInterval(temp);
+    }
+    progressBar.value = 0;
     seconds = 0;
     minutes = 0;
     ffff();
+    temp++;
 }
 function ffff(){
         let aa = setInterval(function(){
