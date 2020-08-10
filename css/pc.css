@@ -159,15 +159,16 @@ body {
 .sec_bg{
     width: 1524px;
     height: 792px;
-    background-color: black;
-    overflow: hidden;
+    background-color: black;;
 }
 .singer{
     position: absolute;
-    top: 792px;
-    left: -280px;
+    top: 600px;
+    left: -195px;
     width: 1920px;
     height: 1069px;
+    
+    overflow: hidden
 }
 .part_singer__item{
     display: block;
@@ -232,3 +233,4 @@ body {
 .part_singer__pic22{
     background-position: 0 -3180px;
 }
+
