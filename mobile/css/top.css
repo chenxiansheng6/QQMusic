@@ -1,0 +1,88 @@
+html {
+    font-size: 100px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-weight: 300;
+    font-stretch: normal;
+    font-size: .4rem;
+    line-height: 1.5;
+    font-family: -apple-system, sans-serif;
+    background-color: #fafafa;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+/* 头部 */
+.header {
+    height: .77rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 3px 25px rgba(0,0,0,.05);
+    background: #fff;
+}
+.header-top {
+    position: relative;
+    height: .77rem;
+}
+.top-box {
+    position: relative;
+    height: 100%;
+    padding: 0 .2rem 0 .2rem;
+    display: flex;
+    align-items: center;
+}
+.top-logo {
+    display: flex;
+    margin-right: .1rem;
+    width: .33rem;
+    height: .33rem;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: .33rem;
+    height: .33rem;
+}
+.top-text h3 {
+    font-size: .22rem;
+    font-weight: 500;
+}
+.down-btn {
+    height: .35rem;
+    line-height: .34rem;
+    padding: 0 .15rem;
+    text-align: center;
+    font-size: .18rem;
+    color: #575656;
+    border: solid 1px #d8d8d8;
+    border-radius: 999px;
+    box-sizing: border-box;
+    right: .2rem;
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
