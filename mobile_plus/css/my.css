@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Marte (iqianduan@126.com)
+ * @date    2020-08-13 18:49:59
+ * @version $Id$
+ */
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+ol, ul ,li{list-style: none;}
+a{
+    text-decoration: none;
+}
+body{
+    background-color:rgb(250,250,250);
+    font-family: -apple-system, sans-serif;
+}
+header.header {
+    right: 0;
+    left: 0;
+    height: 0.5rem;
+    top: 0;
+    margin: 0.1rem 0;
+    position: fixed;
+    padding: 0rem 0.2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header_left h2{
+    font-size: 0.24rem;
+    position: relative;
+}
+.header_left h2::after{
+    content: "";
+    border-radius: 0.1rem;
+    left: -1%;
+    bottom: -26%;
+    background-color: rgb(34,213,157);
+    width: 0.5rem;
+    position: absolute;
+    height: 0.04rem;
+}
+.header_right span{
+    position: relative;
+    padding: 0 0.1rem;
+    font-size: 0.26rem;
+    color: #737373;
+}
+.header_right > a{
+    display: contents;
+}
+#red_dot::after{
+    content: "";
+    width: 0.08rem;
+    position: absolute;
+    height: 0.08rem;
+    border-radius: 50%;
+    background-color: #f40;
+    top: 1%;
+    right: 18%;
+}
+.header_right {
+    display: flex;
+}
+.search_frame {
+    border-radius: 0.1rem;
+    padding: 0.1rem;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    height: 100%;
+    margin: 0 auto;
+    font-size: 0.15rem;
+    margin-top: 0.8rem;
+    background-color: #fff;
+}
+.search_frame > a{
+    color: #989898;
+}
+.coco{
+    padding:0 0.1rem;
+    font-size: 0.18rem;
+}
