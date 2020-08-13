@@ -58,7 +58,7 @@ header.header {
 .header_right > a{
     display: contents;
 }
-#red_dot::after{
+.red_dot::after{
     content: "";
     width: 0.08rem;
     position: absolute;
@@ -89,4 +89,136 @@ header.header {
 .coco{
     padding:0 0.1rem;
     font-size: 0.18rem;
+}
+.person_message {
+    border-radius:0.1rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+    background-color: #fff;
+    flex-direction: column;
+    font-size: 0.2rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.3rem;
+}
+.person_Name {
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    align-items:center;
+    margin-bottom: 0.3rem;
+    height: 0.5rem;
+}
+.person_Name a:not(.portrait){
+    padding:0 0.1rem;
+    display: flex;
+    align-items: center;
+}
+.portrait{
+    position: relative;
+    height: 0.8rem;
+    background-image: url(../img/my_page/Cache_-5110fd6ae75483c4..jpg);
+    width: 0.8rem;
+    background-size: contain;
+    border-radius: 50%;
+}
+span.penguin{
+    position: absolute;
+    bottom: 0px;
+    right: 9%;
+    font-size: 0.16rem;
+    color: #42a3e8;
+}
+.username{
+    padding-right: 0.05rem;
+    font-weight: 500;
+    font-size: 0.2rem;
+    display: inline;
+}
+span.person_level {
+    width: 0.4rem;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    background-color: #fb96008c;
+    font-size: 0.12rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0.1rem;
+    padding-left: 0.05rem;
+    height: 0.18rem;
+}
+span.iconfont.record {
+     z-index: 10;
+    position: absolute;
+    top: -15%;
+    left: -20%;
+    font-size: 0.21rem;
+    color: #ff7905;
+}
+span.iconfont.vip {
+    font-size: 0.24rem;
+    vertical-align: sub;
+}
+.person_concerns {
+    color: #d4d2d2;
+    font-size: 0.16rem;
+}
+.Concerns, .fans, .new_remind{
+    color: black;
+    font-weight: 300;
+    position: relative;
+}
+.Concerns::after ,.fans::after{
+    position: absolute;
+    content: "|";
+    color: #e2e2e2;
+    right: -50%;
+}
+.person_concerns {
+    display: flex;
+    color: #d4d2d2;
+    font-size: 0.16rem;
+    justify-content: space-around;
+    width: 100%;
+}
+.new_remind > span{
+    padding-left:0.1rem;
+    color: #b8b3b3;
+}
+.middle_area {
+    border-radius:0.1rem;
+    padding: 0.2rem 0;
+    display: flex;
+    font-size: 0.16rem;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 0.23rem;
+    justify-content: space-around;
+}
+.activity_center,.vip_center {
+    display: flex;
+    align-items: center;
+    flex-grow:1;
+    justify-content: space-evenly;
+}
+.red_box{
+    position: relative;
+}
+.middle_area > div > a > span{
+    font-size: 0.3rem !important;
+    color: #dadada;
+}
+.middle_area p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 0.65rem;
+    font-size: 0.12rem;
+    overflow: hidden;
+}
+p.Center1 {
+    font-size: 0.15rem;
 }
