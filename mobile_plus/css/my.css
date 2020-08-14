@@ -23,11 +23,11 @@ body{
 header.header {
     right: 0;
     left: 0;
-    height: 0.5rem;
+    height: 0.6rem;
     top: 0;
     margin: 0.1rem 0;
     position: fixed;
-    padding: 0rem 0.2rem;
+    padding: 0 0.2rem;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -36,18 +36,19 @@ header.header {
 }
 
 .header_left h2{
-    font-size: 0.24rem;
+    font-size: 0.28rem;
     position: relative;
+    font-weight: 400;
 }
 .header_left h2::after{
     content: "";
     border-radius: 0.1rem;
     left: -1%;
-    bottom: -26%;
+    bottom: -33%;
     background-color: rgb(34,213,157);
-    width: 0.5rem;
+    width: 0.55rem;
     position: absolute;
-    height: 0.04rem;
+    height: 0.05rem;
 }
 .header_right span{
     position: relative;
@@ -80,7 +81,7 @@ header.header {
     height: 100%;
     margin: 0 auto;
     font-size: 0.15rem;
-    margin-top: 0.8rem;
+    margin-top: 1rem;
     background-color: #fff;
 }
 .search_frame > a{
