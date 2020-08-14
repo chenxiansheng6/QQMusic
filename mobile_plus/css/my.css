@@ -259,7 +259,10 @@ span.song_number {
     padding-top: 0.06rem;
 }
 span.sp_ic_bendi{
-    font-size: 0.34rem !important;
+    font-size: 0.36rem !important;
+    margin-bottom: -0.05rem !important;
+    position: relative;
+    top: -.03rem;
 }
 span.iconfont.btn_function.sp_ic{
     border-radius: 0.07rem;
@@ -281,6 +284,7 @@ span.iconfont.btn_function.sp_ic_buy{
 .main-text {
     font-size: 0.25rem;
     margin-bottom: 0.1rem;
+    font-weight: 500;
 }
 .songlist-1_header {
     display: flex;
@@ -314,7 +318,7 @@ span.iconfont.More{
     font-size:0.14rem;
 }
 .song {
-    margin: 0 .25rem .4rem 0.1rem;
+    margin: 0 .1rem .4rem 0.1rem;
     white-space: nowrap;
     display: inline-flex;
 }
