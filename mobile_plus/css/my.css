@@ -290,15 +290,16 @@ span.iconfont.btn_function.sp_ic_buy{
     align-items: center;
     position: relative;
 }
-.new_build {
-    position: absolute;
-    right: 10%;
-    top: 30%;
+.new_build{
+    width: 27%;
     display: flex;
-    font-size: 0.13rem;
+    justify-content: space-around;
+    align-items: center;
 }
-.new_build > span.iconfont {
-    margin-left: 0.1rem;
+.new_build > span:first-child{
+    font-size:0.16rem;
+}
+.new_build > a.iconfont {
     font-size: 0.15rem;
     border-radius: 0.05rem;
     color: #fff;
@@ -309,19 +310,13 @@ span.iconfont.btn_function.sp_ic_buy{
     display: inline-block;
     background-color: rgb(34,213,157);
 }
-
+span.iconfont.More{
+    font-size:0.14rem;
+}
 .song {
     margin: 0 .25rem .4rem 0.1rem;
     white-space: nowrap;
     display: inline-flex;
-}
-.icon-play {
-    display: inline-block;
-    width: .12rem;
-    height: .12rem;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../img/song/play.png");
 }
 .item-box {
     width: 1.6rem;
@@ -413,8 +408,39 @@ li.song-item {
 .find_more {
     width: 90%;
     font-size: 0.18rem;
-    height: 1.5rem;
+    height: 1rem;
     text-align: center;
     margin: 0 auto;
     color: #a1a1a1;
+}
+span.F_text {
+    font-size: 0.15rem;
+    color: #a1a1a1;
+}
+.Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    background-color:#fff;
+    padding-top:0.1rem;
+    z-index:100;
+}
+.Footer > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Footer span.iconfont{
+    padding-bottom:0.05rem;
+    font-size:0.34rem;
+    color:#a1a1a1;
+}
+.Footer span.F_active{
+    color:rgb(34,213,157);
 }

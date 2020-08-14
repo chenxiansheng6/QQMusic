@@ -125,6 +125,26 @@
 .icon-yinfu:before {
   content: "\e60a";
 }
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1597405664919'); /* IE9 */
+  src: url('iconfont.eot?t=1597405664919#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARQAAsAAAAACHQAAAQBAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDHAqEOIQMATYCJAMQCwoABCAFhG0HPRtzB8ieB3Ys8goG5hUqDE/3Qf73bNqf+x7JElIXVjxrLjSFhBoZQoV2RdS+qIYH4t69P4dl2hbosrEtkQRDSLgNXgMgyDTpKcBac/9zzHQpnh9oLtmBA9u4dUBRYXtHdgdyQH4gt4hnk8H/BF4HAkgyeNC0c8+BEAnUeQSgs+5TIEbkhIJUIiLOjK1xMS1CQgxns3sAC52fpy8KRIBxRFCX9t12ykbbh2ObTwqJpYUAozstAHYXwAEegAC0z9Rn4Z7fg5Pk0YLGAJGIQVd9ns/t0B+ZS+GLGh9N//AYUAqVHwbYhgEOnzsMeiDwgBQEAhuSwAC4IFtEgATYCzSAKo7r5kVO6KN4RI0kd4w7Kj/sxYvB/OXLIeHPnw9iz56NCXPCbOlABtzwtBM1ZWzZnD2T957cu3Hv3N24PSuJnpvo5rhUauWcZ22XbduxY83axJcvB714ITWxrNpV5YQtfYa6VjtqTkIJajXty0+GRKkCN7lQu6wMFiP1nFHXn5fHukcNw048yaCtbfaedee2QK1EzZEODZOzsPl5p/CbLyv2NfTftL+Hb4ded2xLelEEQQhCUmbtMeiwGNaBjukUbESHK1p+pbEntH8E86Eet7ra6sAa5+6qu+Ok3r2bPJpfw7XIVRS+ajsvinGV7t5UxjrbzY7ZxVNrz2xit+iyrfsoatl+S9cRO9iXj2O2xbyqd3RASvsWFft6MOAY7C82DIzuISpW1JLtVMhKN+8uEyufjv/sApuH36xOJfk1Z5wULZew7tbrdVH94FmF3yCMggFEtEYB4dOGMYA+qFi3Uyee7NIW/bxIcyWziriS/GrwXzqbO5eZXv/ceToLPjaP+ZNqXOpGikLdkiMGDPzp548GDohMpm6Kgr4AIPQxj2c4wYt8IW/7JfwO6u6G9BgT2fI3KwEA8Hbkmg+hIDTJ8ZYLj5NRmfHcy5I3IBRK3nIsVSHEEg+FQqG6A4K+oSgwgKSZgRCaY7zfhTBe9gJEjDBYYMpJB05UCSlgPeDg1hCcRG1AUlOX3W6xTBzFLgA1TCdAohwEJsJF4KLcRwrY98AhwXfgFBVwkAwOYo90qxLoUgdTVSw1W86yZd1rFGi6ypLc1P6qrzBPMcMsBzdYNYO6S65Xu2481EUtUM0uVgSLfPUtS5M108iXO5Pb1Lw8Qw6YRo7qtWr7LSvQvE4dLeuLanuNfEg6MKkUFlU2WRabTOdlKKBZzS1S4vv7U/kUyqMwC2rK5IOpTEH64LJ6aqtbAdmFX1Cp5lRGBxXxqc9i0ahZGpMhn6wzaFV5mt8gC2RPyqHystTmb+ANaK4O1tOq8msPL8w/wy0AEvUtIWDESSAHnBe/HtALuF1YIBQb2SoAAAAA') format('woff2'),
+  url('iconfont.woff?t=1597405664919') format('woff'),
+  url('iconfont.ttf?t=1597405664919') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1597405664919#iconfont') format('svg'); /* iOS 4.1- */
+}
+.icon-shipin:before {
+  content: "\e62c";
+}
+
+.icon-yun:before {
+  content: "\e679";
+}
+
+.icon-wode:before {
+  content: "\e605";
+}
+
 
 
 
