@@ -295,12 +295,12 @@ span.iconfont.btn_function.sp_ic_buy{
     background-image: url("../img/song/play.png");
 }
 .item-box {
-    width: 2.1rem;
+    width: 1.1rem;
     margin: 0 0.05rem;
 }
 .song-pic {
     position: relative;
-    height: 2.1rem;
+    height: 1.1rem;
 }
 .songlist-3 .item-box {
     width: 4.5rem;
