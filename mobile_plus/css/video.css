@@ -1,0 +1,30 @@
+.header_box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-weight: 500;
+    justify-content: space-between;
+}
+.header a {
+    display: inline-block;
+    margin-right: .3rem;
+    font-size: .21rem;
+}
+.header a:last-child {
+    display: inline-block;
+    margin-right: 0;
+    font-size: .21rem;
+}
+.top-pic img {
+    height: 2.77rem;
+}
+.top-pic {
+    margin: .2rem .2rem;
+}
+
+
+
+
+
+
+

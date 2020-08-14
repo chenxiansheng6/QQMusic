@@ -91,6 +91,8 @@ li {
     font-size: .22rem;
     font-weight: 500;
     margin: 0 0 .2rem .2rem;
+    display: flex;
+    align-items: flex-end;
 }
 .song {
     margin: 0 .15rem .2rem .15rem;
@@ -142,10 +144,10 @@ li {
     bottom: -.12rem;
     font-size: .15rem;
     color: #fff;
-    padding: 0 .12rem;
+    padding: 0 .16rem;
     background: rgba(0,0,0,.4);
     border-radius: .3rem;
-    height: .4rem;
+    height: .36rem;
     display: flex;
     align-items: center;
     line-height: .1rem;
@@ -159,23 +161,46 @@ li {
 li.song-item {
     display: inline-flex;
 }
-.songlist-3 .song-pic .count {
-    position: absolute;
-    left: .12rem;
-    bottom: .12rem;
-    font-size: .4rem;
-    color: #fff;
-    background: none;
-    padding: 0 .12rem;
-}
 ::-webkit-scrollbar {
     display: none;
 }
-
-
-
-
-
+.song-2 {
+    margin: 0 .15rem .2rem .15rem;
+    white-space: nowrap;
+    /*display: inline-flex;*/
+}
+.songlist-2 .main-text .count {
+    background: rgb(34,213,157);
+    display: inline-flex;
+    margin: 0 .16rem;
+    padding: 0 .1rem;
+    border-radius: .2rem;
+    font-size: .16rem;
+    align-items: center;
+    height: 0.3rem;
+}
+.songlist-2 .item-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: .2rem;
+}
+.song-pic-2 {
+    margin-right: .2rem;
+}
+.song-pic-2 img {
+    width: 1rem;
+    border-radius: .12rem;
+}
+.song-text h3 {
+    font-size: .2rem;
+    font-weight: 400;
+    margin: .1rem 0;
+}
+.song-text p {
+    font-size: .18rem;
+    margin: .15rem 0;
+    color: gray;
+}
 
 
 
