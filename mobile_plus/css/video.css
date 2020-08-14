@@ -21,9 +21,58 @@
 .top-pic {
     margin: .2rem .2rem;
 }
-
-
-
+.video-main {
+    margin: 0 .2rem;
+}
+.video {
+    display: flex;
+    justify-content: space-between;
+}
+.video-pic {
+    position: relative;
+    height: 2.34rem;
+    width: 2.34rem;
+}
+.video-pic img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: .12rem;
+}
+.video-pic .count {
+    position: absolute;
+    left: .1rem;
+    font-size: .15rem;
+    top: .96rem;
+    color: #ffffff;
+    padding: 0 .16rem;
+    background: rgb(34,213,157);
+    border: .01rem solid #ffffff;
+    border-radius: .3rem;
+    height: .3rem;
+    display: flex;
+    align-items: center;
+    line-height: .1rem;
+}
+.video-pic .time {
+    position: absolute;
+    display: flex;
+    right: .1rem;
+    top: 1rem;
+    font-size: .2rem;
+    font-weight: 500;
+    color: #fff;
+}
+.text-box {
+    position: absolute;
+    bottom: 0;
+    height: .9rem;
+    padding: .1rem .1rem 0 .1rem;
+    background: #fff;
+    border-bottom-left-radius: .12rem;
+    border-bottom-right-radius: .12rem;
+    font-size: .18rem;
+}
 
 
 

@@ -201,7 +201,9 @@ li.song-item {
     margin: .15rem 0;
     color: gray;
 }
-
+.footer {
+    margin-bottom: 1rem;
+}
 
 
 
