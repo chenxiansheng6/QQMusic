@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Marte (iqianduan@126.com)
+ * @date    2020-08-14 20:53:04
+ * @version $Id$
+ */
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    border:0;
+}
+ol, ul ,li{list-style: none;}
+a{
+    text-decoration:none;
+}
+div.header_bar {
+    z-index:100;
+    right: 0;
+    left: 0;
+    height: 0.8rem;
+    top: 0;
+    position: fixed;
+    padding: 0 0.2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+}
+span.iconfont.SP_back {
+    font-size: 0.26rem;
+    color: #a1a1a1;
+}
+.header_left > a{
+    display:flex;
+}
+.header_right span{
+    position: relative;
+    padding: 0 0.1rem;
+    font-size: 0.26rem;
+    color: #737373;
+}
+.header_right > a{
+    display: contents;
+}
+.header_right {
+    display: flex;
+}
+
+
+.my_name {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    top: 3%;
+    background-color: #b3c4d1;
+    justify-content: center;
+}
+.my_name > span{
+    font-size: 0.3rem;
+}
+.person_message {
+    border-radius: 0.1rem;
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    display: flex;
+    height: 1.3rem;
+    align-items: center;
+    padding-top: 4rem;
+    background-size: cover;
+    background-image: url(../img/my_page/jielun.jpg);
+}
+.person_Name {
+    width: 90%;
+    justify-content: end;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.3rem;
+}
+.person_Name a:not(.portrait){
+    padding:0 0.1rem;
+    display: flex;
+    align-items: center;
+}
+.portrait{
+    position: absolute;
+    height: 0.8rem;
+    background-image: url(../img/my_page/Cache_-5110fd6ae75483c4..jpg);
+    width: 0.8rem;
+    background-size: contain;
+    border-radius: 50%;
+    left: 5%;
+    bottom: 170%;
+}
+span.penguin{
+    position: absolute;
+    bottom: 0px;
+    right: 9%;
+    font-size: 0.16rem;
+    color: #42a3e8;
+}
+.username{
+    padding-right: 0.05rem;
+    font-weight: 500;
+    font-size: 0.2rem;
+    display: inline;
+    color:#fff;
+}
+span.person_level {
+    width: 0.4rem;
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    background-color: #fb9600;
+    font-size: 0.12rem;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0.1rem;
+    padding-left: 0.05rem;
+    height: 0.18rem;
+}
+span.iconfont.record {
+     z-index: 10;
+    position: absolute;
+    top: -18%;
+    left: -20%;
+    font-size: 0.22rem;
+    color: #ff0000;
+}
+span.iconfont.ear {
+    font-size: 0.3rem;
+    color: rgb(34,213,157);
+    vertical-align: sub;
+}
+.person_concerns {
+    color: #d4d2d2;
+    font-size: 0.16rem;
+}
+.Concerns, .fans, .new_remind,.visitors{
+    color: #ffffff;
+    font-weight: 500;
+    position: relative;
+}
+
+.person_concerns {
+    display: flex;
+    color: #d4d2d2;
+    font-size: 0.16rem;
+    justify-content: space-around;
+    width: 100%;
+}
+.new_remind > span{
+    padding-left:0.1rem;
+    color: #b8b3b3;
+}
