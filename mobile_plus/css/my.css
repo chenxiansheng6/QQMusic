@@ -335,19 +335,18 @@ span.iconfont.More{
 }
 .song-pic:before{
     content: "\e622";
-    z-index: 100;
+    z-index: 10;
     color: #fff;
     position: absolute;
     bottom: -6%;
     border-radius: 0.2rem;
     text-align: center;
     left: 2%;
-    height: 15%;
-    border: 1px solid;
-    width: 26%;
+    height: 17%;
+    width: 30%;
     background-color: rgb(147,157,178);
     line-height: 0.25rem;
-    font-size: 0.12rem;
+    font-size: 0.16rem;
 }
 .song-pic.SP_yifu:after{
     content: "\e60a";
@@ -385,8 +384,8 @@ span.iconfont.More{
     border-radius: .12rem;
 }
 .item-box .text {
-    font-size: .12rem;
-    margin-top: .12rem;
+    font-size: .18rem;
+    margin-top: .2rem;
     white-space: normal;
 }
 .songlist-box {
