@@ -13,11 +13,13 @@
     justify-content: center;
 }
 .btn .icon-fenlei {
-    font-size: .4rem;
+    font-size: .38rem;
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: .08rem;
+    margin-bottom: .11rem;
+    top: .05rem;
 }
 .item-box .text {
     font-size: .18rem;
