@@ -1,19 +1,15 @@
 @charset "UTF-8";
-/**
- *
- * @authors Marte (iqianduan@126.com)
- * @date    2020-08-14 20:53:04
- * @version $Id$
- */
-*{
+* {
     margin: 0;
     padding: 0;
 }
-img{
+img {
     border:0;
 }
-ol, ul ,li{list-style: none;}
-a{
+ol, ul ,li {
+    list-style: none;
+}
+a {
     text-decoration:none;
 }
 div.header_bar {

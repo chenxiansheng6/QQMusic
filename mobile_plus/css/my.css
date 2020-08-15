@@ -300,13 +300,13 @@ span.iconfont.btn_function.sp_ic_buy {
     align-items: center;
     position: relative;
 }
-.new_build{
+.new_build {
     width: 27%;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.new_build > span:first-child{
+.new_build > span:first-child {
     font-size:0.16rem;
 }
 .new_build > a.iconfont {
@@ -320,7 +320,7 @@ span.iconfont.btn_function.sp_ic_buy {
     display: inline-block;
     background-color: rgb(34,213,157);
 }
-span.iconfont.More{
+span.iconfont.More {
     font-size:0.14rem;
 }
 .song {
@@ -336,10 +336,10 @@ span.iconfont.More{
     position: relative;
     height: 1.6rem;
 }
-.song-pic.SP_yifu:before{
+.song-pic.SP_yifu:before {
     background-color: rgb(179,143,179);
 }
-.song-pic:before{
+.song-pic:before {
     content: "\e622";
     z-index: 10;
     color: #fff;
@@ -354,7 +354,7 @@ span.iconfont.More{
     line-height: 0.25rem;
     font-size: 0.16rem;
 }
-.song-pic.SP_yifu:after{
+.song-pic.SP_yifu:after {
     content: "\e60a";
     top: 0;
     width: 100%;
