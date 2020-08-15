@@ -5,14 +5,19 @@
  * @date    2020-08-15 10:22:33
  * @version $Id$
  */
+
+
+
 .header_text {
     font-size: 0.2rem;
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    color: #7b7878;
 }
 .SP_shuxian{
     position: relative;
+    color:black;
 }
 .SP_shuxian:after{
     content: '';
@@ -57,4 +62,36 @@ span.iconfont.SP_daoru {
 }
 .library_1:last-child{
     padding-bottom:1rem;
+}
+.Collection_Songlist {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.18rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+}
+.Collection_Songlist{
+    display:none;
+}
+.Collection_Songlist > span.iconfont{
+    font-size: 2rem;
+    color: rgb(20 190 137);
+}
+.coll{
+    font-size:0.16rem;
+}
+.musicLibrary > span{
+    font-size:0.16rem;
+    color: rgb(20 190 137);
+}
+.musicLibrary{
+    border-radius: 0.2rem;
+    border: 1px solid rgb(20 190 137);
+    margin-top: 0.1rem;
+    line-height: 0.3rem;
+    padding: 0.05rem 0.15rem;
+    text-align: center;
+    text-decoration: none;
 }

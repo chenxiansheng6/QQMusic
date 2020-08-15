@@ -20,8 +20,8 @@
                 </a>
             </div>
             <div class="header_text">
-                <span class="SP_shuxian">自建歌单</span>
-                <span>收藏歌单</span>
+                <span class="SP_shuxian rebuild_btn">自建歌单</span>
+                <span class="Collection_btn">收藏歌单</span>
             </div>
         </div>
     </header>
@@ -30,7 +30,7 @@
             <h2>6张歌单</h2>
             <div class="header_right">
                 <a><span class="iconfont">&#xe511;</span></a>
-                <a><span class="iconfont">&#xe609;</span></a>
+                <a><span class="iconfont">&#xe8f5;</span></a>
             </div>
         </div>
         <div class="library_1">
@@ -131,10 +131,37 @@
                 </div>
             </div>
         </div>
-
+    </div>
+    <div class="Collection_Songlist">
+            <span class="iconfont">&#xe683;</span>
+            <span class="coll">没有收藏的歌单</span>
+            <a class="musicLibrary"><span>去音乐馆逛逛</span></a>
     </div>
 </div>
 <script src="js/fontsize.js">
+</script>
+<script type="text/javascript">
+     let gedan1 = document.getElementsByClassName("rebuild_btn")[0];
+     let gedan2 = document.getElementsByClassName("Collection_btn")[0];
+
+     let page1 =document.getElementsByClassName("music_library")[0];
+     let page2 =document.getElementsByClassName("Collection_Songlist")[0];
+
+    function show1(){
+        gedan2.style.color = "#7b7878";
+        gedan1.style.color = "black";
+        page1.style.display = "block";
+        page2.style.display = "none";
+    }
+    function show2(){
+        gedan1.style.color = "#7b7878";
+        gedan2.style.color = "black";
+        page2.style.display = "flex";
+        page1.style.display = "none";
+    }
+    gedan1.addEventListener("click",show1,false);
+    gedan2.addEventListener("click",show2,false);
+
 </script>
 </body>
 </html>
