@@ -49,13 +49,14 @@ span.iconfont.SP_back {
 .header_right {
     display: flex;
 }
-
-
 .my_name {
     position: fixed;
     display: flex;
+    height: 0.8rem;
     width: 100%;
-    top: 3%;
+    align-items: center;
+    top: 0;
+    display: none;
     background-color: #b3c4d1;
     justify-content: center;
 }
@@ -63,7 +64,9 @@ span.iconfont.SP_back {
     font-size: 0.3rem;
 }
 .person_message {
-    border-radius: 0.1rem;
+    border-radius: 0.2rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     width: 100%;
     background-color: #fff;
     flex-direction: column;
@@ -89,9 +92,9 @@ span.iconfont.SP_back {
 }
 .portrait{
     position: absolute;
-    height: 0.8rem;
+    height: 1rem;
     background-image: url(../img/my_page/Cache_-5110fd6ae75483c4..jpg);
-    width: 0.8rem;
+    width: 1rem;
     background-size: contain;
     border-radius: 50%;
     left: 5%;
@@ -133,9 +136,11 @@ span.iconfont.record {
     color: #ff0000;
 }
 span.iconfont.ear {
-    font-size: 0.3rem;
+    font-size: 0.35rem;
+    font-weight:400;
+    height: 0.3rem;
     color: rgb(34,213,157);
-    vertical-align: sub;
+    line-height: 0.26rem;
 }
 .person_concerns {
     color: #d4d2d2;
@@ -157,4 +162,116 @@ span.iconfont.ear {
 .new_remind > span{
     padding-left:0.1rem;
     color: #b8b3b3;
+}
+h2{
+    width: 100%;
+    font-size:0.26rem;
+    padding: 0.05rem 0;
+}
+.basic_message {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    padding: 0.3rem 0 0.1rem 0;
+    margin: 0 auto;
+}
+.music_favor {
+    padding: 0.05rem 0;
+    text-overflow: ellipsis;
+    font-size: 0.16rem;
+    color: #777777;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.favor_left span{
+    padding:0 0.08rem;
+}
+.favor_left span:first-child{
+    padding-left:0;
+}
+@media screen and (max-width:370px){
+    .favor_right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index:100;
+    }
+}
+span.iconfont.medal {
+    font-size: 0.16rem;
+    color: #777777;
+    padding: 0.05rem 0;
+}
+.music_library > h2{
+        width: 96%;
+    margin: 0 auto;
+}
+.library_1 {
+    width: 96%;
+    margin: 0.1rem auto;
+}
+.music_item.music_like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.left_item_img{
+    display:flex;
+    position: relative;
+}
+div.P1:after{
+    content:'\e62b';
+    position: absolute;
+    color: red;
+    top: 37%;
+    font-size: 0.3rem;
+    left: 31%;
+}
+div.P2:after{
+    content:'\e7ae';
+    position: absolute;
+    color: #fff;
+    top: 33%;
+    font-size: 0.32rem;
+    left: 32%;
+}
+div.P3:after{
+    content:'\e683';
+    position: absolute;
+    color: #fff;
+    top: 37%;
+    font-size: 0.32rem;
+    left: 31%;
+}
+.right_item_arrow {
+    display: flex;
+}
+.right_item_arrow >span{
+    font-size: 0.16rem;
+    color: #777777;
+}
+.middle_item_message {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 0 0 0 0.1rem;
+}
+.left_item_img > img{
+    width: 1rem;
+    border-radius: 0.1rem;
+}
+h3 {
+    font-size: 0.22rem;
+    text-indent: 0.08rem;
+    padding-bottom: 0.1rem;
+}
+p.among{
+    color: #7c7a7a;
+    font-weight: 300;
+    font-size: 0.2rem;
 }
