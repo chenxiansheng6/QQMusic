@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Marte (iqianduan@126.com)
+ * @date    2020-08-15 10:22:33
+ * @version $Id$
+ */
+.header_text {
+    font-size: 0.2rem;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+.SP_shuxian{
+    position: relative;
+}
+.SP_shuxian:after{
+    content: '';
+    background-color: #a3a3a3;
+    height: 0.16rem;
+    width: 0.01rem;
+    top: 27%;
+    right: 0;
+    position: absolute
+}
+.header_text > span{
+    padding: 0 0.2rem;
+}
+.music_library {
+    margin-top: 1rem;
+}
+.library_header {
+    align-items: center;
+    display: flex;
+    width: 96%;
+    margin: 0 auto;
+}
+.header_right > a:first-child > span{
+    font-size: 0.18rem;
+    line-height: 0.26rem;
+    text-align: center;
+    padding: 0 0.03rem;
+    border: 2px solid #737373;
+    border-radius: 0.1rem;
+}
+.library_1{
+    width: 96%;
+    margin: 0.12rem auto;
+}
+span.iconfont.SP_daoru {
+    display: inline-block;
+    width: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    height: 1rem;
+    transform: rotate(180deg);
+}
+.library_1:last-child{
+    padding-bottom:1rem;
+}

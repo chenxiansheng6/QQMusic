@@ -264,6 +264,7 @@ div.P3:after{
 .left_item_img > img{
     width: 1rem;
     border-radius: 0.1rem;
+    box-shadow: 3px 0px 5px #a1a1a1a6;
 }
 h3 {
     font-size: 0.22rem;
