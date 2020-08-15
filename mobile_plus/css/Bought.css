@@ -34,6 +34,10 @@ div.header_bar{
     display: flex;
     justify-content: space-around;
 }
+.bought_bar a span:first-child{
+    padding-bottom: 0.05rem;
+    color:black;
+}
 span.green_bar{
     width: 0.2rem;
     border-radius: 0.1rem;
@@ -41,18 +45,13 @@ span.green_bar{
     background-color: #fff;
     display: inline-block;
 }
-span.green_bar.active{
-    background-color: rgb(34,213,157);
-}
 .bought_bar > a {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top:0.1rem;
 }
-.bought_bar a span:first-child{
-    padding-bottom: 0.05rem;
-}
+
 .library_header {
     width: 96%;
     display: flex;
@@ -85,18 +84,19 @@ p.SongName{
     height: 8rem;
 }
 .Entity{
+    text-align:center;
     display:none;
 }
 .Number_Album{
     width: 96%;
     margin: 0 auto;
     margin-top: 0.25rem;
-    display:none;
 }
 .Single_song{
     display:none;
 }
 .Ticket{
+    display:none;
     margin-top:0.25rem;
 }
 .Single_song > p{
@@ -104,12 +104,14 @@ p.SongName{
     text-align: center;
     font-size: 0.2rem;
 }
-.Entity > span.iconfont{
+.Entity > div.iconfont{
     font-size: 2rem;
+    margin-top: 1.2rem;
     color: rgb(20 190 137);
 }
 .coll{
     font-size:0.16rem;
+    margin: 0.2rem 0;
 }
 .musicLibrary > span{
     font-size:0.16rem;

@@ -180,5 +180,22 @@
     </div>
 </div>
 <script src="js/fontsize.js"></script>
+<script type="text/javascript">
+     let hidden = document.getElementsByClassName("my_name")[0];
+     let h3 = document.scrollTop||document.documentElement.scrollTop;
+     window.onscroll = function(){
+        let h1 = document.innerHeight;
+        let h2 = document.scrollTop||document.documentElement.scrollTop;
+        if(h2 <= 10){
+            hidden.style.opacity = "0";
+        }else if(h2 > 50 && h2 < 100){
+            hidden.style.opacity = "0.2";
+        }
+        else {
+            let temp = 0.6+parseInt(h2/50)/100;
+            hidden.style.opacity = temp;
+        }
+     }
+</script>
 </body>
 </html>
