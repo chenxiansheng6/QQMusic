@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/**
+ *
+ * @authors Marte (iqianduan@126.com)
+ * @date    2020-08-15 14:11:08
+ * @version $Id$
+ */
+.header_bar > span{
+    font-size:0.2rem;
+}
