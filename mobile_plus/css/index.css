@@ -24,7 +24,6 @@ li {
     height: .8rem;
     padding: 0 .2rem;
     display: flex;
-    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -48,18 +47,19 @@ li {
     margin-right: .3rem;
     font-size: .25rem;
 }
-.header a:first-child {
+.header .current {
     font-size: .28rem;
+    position: relative;
 }
-.header a:first-child::after {
+.header .current::after {
     content: "";
     border-radius: 0.1rem;
     background-color: rgb(34,213,157);
-    width: 0.56rem;
+    width: 100%;
     position: absolute;
     height: 0.05rem;
-    left: .2rem;
-    top: .66rem;
+    left: 0;
+    bottom: -.1rem;
 }
 .search {
     display: flex;
@@ -167,7 +167,6 @@ li.song-item {
 .song-2 {
     margin: 0 .15rem .2rem .15rem;
     white-space: nowrap;
-    /*display: inline-flex;*/
 }
 .songlist-2 .main-text .count {
     background: rgb(34,213,157);
@@ -178,6 +177,7 @@ li.song-item {
     font-size: .16rem;
     align-items: center;
     height: 0.3rem;
+    line-height: 1rem;
 }
 .songlist-2 .item-list {
     display: flex;

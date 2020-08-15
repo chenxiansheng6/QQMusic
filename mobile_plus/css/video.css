@@ -99,7 +99,6 @@
     position: absolute;
     left: .1rem;
     bottom: .1rem;
-
     justify-content: center;
     border-radius: .05rem;
     align-items: center;
@@ -116,6 +115,9 @@
     right: .1rem;
     bottom: .1rem;
     color: gray;
+}
+.video:last-child {
+    margin-bottom: 1rem;
 }
 
 
