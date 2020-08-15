@@ -47,10 +47,6 @@
   content: "\e647";
 }
 
-.icon-menu2:before {
-  content: "\e609";
-}
-
 .icon-icon--:before {
   content: "\e77e";
 }
@@ -205,7 +201,9 @@
   content: "\eaf3";
 }
 
-
+.icon-menu2:before {
+  content: "\e609" !important;
+}
 
 
 

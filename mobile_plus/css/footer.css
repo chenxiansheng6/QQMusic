@@ -1,0 +1,40 @@
+span.F_text {
+    font-size: 0.15rem;
+    color: #a1a1a1;
+    display: flex;
+    justify-content: center;
+}
+.Footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    background-color: #fff;
+    padding: 0.1rem 0;
+    z-index: 100;
+}
+.Footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Footer span.iconfont {
+    font-size: 0.34rem;
+    color: #a1a1a1;
+}
+.Footer span.F_active {
+    color: rgb(34,213,157);
+}
+.Footer .F_pu .iconfont {
+    font-size: .28rem;
+    position: relative;
+    top: .05rem;
+}
+.F_pu .F_text {
+    padding-top: .08rem;
+}

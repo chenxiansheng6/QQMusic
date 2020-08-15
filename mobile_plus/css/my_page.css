@@ -64,9 +64,8 @@ span.iconfont.SP_back {
     font-size: 0.3rem;
 }
 .person_message {
-    border-radius: 0.2rem;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-bottom-left-radius: .2rem;
+    border-bottom-right-radius: .2rem;
     width: 100%;
     background-color: #fff;
     flex-direction: column;
@@ -75,7 +74,7 @@ span.iconfont.SP_back {
     align-items: center;
     padding-top: 4rem;
     background-size: cover;
-    background-image: url(../img/my_page/jielun.jpg);
+    background-image: url("../img/my_page/jielun.jpg");
 }
 .person_Name {
     width: 90%;
@@ -93,7 +92,7 @@ span.iconfont.SP_back {
 .portrait{
     position: absolute;
     height: 1rem;
-    background-image: url(../img/my_page/Cache_-5110fd6ae75483c4..jpg);
+    background-image: url("../img/my_page/Cache_-5110fd6ae75483c4..jpg");
     width: 1rem;
     background-size: contain;
     border-radius: 50%;
@@ -167,6 +166,7 @@ h2{
     width: 100%;
     font-size:0.26rem;
     padding: 0.05rem 0;
+    font-weight: 500;
 }
 .basic_message {
     display: flex;
@@ -264,15 +264,19 @@ div.P3:after{
 .left_item_img > img{
     width: 1rem;
     border-radius: 0.1rem;
-    box-shadow: 3px 0px 5px #a1a1a1a6;
+    box-shadow: 3px 0 5px #a1a1a1a6;
 }
 h3 {
     font-size: 0.22rem;
     text-indent: 0.08rem;
     padding-bottom: 0.1rem;
+    font-weight: 500;
 }
 p.among{
     color: #7c7a7a;
     font-weight: 300;
     font-size: 0.2rem;
+}
+.music_library:last-child {
+    margin: .5rem 0 1rem;
 }
