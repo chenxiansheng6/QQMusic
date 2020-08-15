@@ -178,7 +178,7 @@ h2{
 .music_favor {
     padding: 0.05rem 0;
     text-overflow: ellipsis;
-    font-size: 0.16rem;
+    font-size: 0.18rem;
     color: #777777;
     white-space: nowrap;
     display: flex;
@@ -187,7 +187,7 @@ h2{
     position: relative;
 }
 .favor_left span{
-    padding:0 0.08rem;
+    padding-right: 0.08rem;
 }
 .favor_left span:first-child{
     padding-left:0;
@@ -201,7 +201,7 @@ h2{
     }
 }
 span.iconfont.medal {
-    font-size: 0.16rem;
+    font-size: 0.18rem;
     color: #777777;
     padding: 0.05rem 0;
 }
@@ -276,6 +276,7 @@ p.among{
     color: #7c7a7a;
     font-weight: 300;
     font-size: 0.2rem;
+    text-indent: 0.08rem;
 }
 .music_library:last-child {
     margin: .5rem 0 1rem;

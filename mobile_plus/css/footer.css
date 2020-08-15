@@ -6,7 +6,7 @@ span.F_text {
 }
 .Footer {
     position: fixed;
-    bottom: 0;
+    bottom: -.04rem;
     left: 0;
     right: 0;
     width: 100%;
@@ -15,7 +15,7 @@ span.F_text {
     margin: 0 auto;
     align-items: center;
     background-color: #fff;
-    padding: 0.1rem 0;
+    padding: 0.05rem 0;
     z-index: 100;
 }
 .Footer > div {
@@ -37,4 +37,7 @@ span.F_text {
 }
 .F_pu .F_text {
     padding-top: .08rem;
+}
+.F_chief, .F_video, .F_pu, .F_mine {
+    margin-bottom: .05rem;
 }
