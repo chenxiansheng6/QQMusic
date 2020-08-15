@@ -22,3 +22,51 @@
 .item-box .text {
     font-size: .18rem;
 }
+.main-text {
+    max-width: 5.2rem;
+    position: relative;
+}
+.main-text .count {
+    background: none !important;
+    font-size: .17rem;
+    position: absolute;
+    right: 0;
+}
+.song-2 {
+    margin: 0 .15rem .3rem .15rem;
+}
+.icon-dayu {
+    margin-left: .05rem;
+}
+.songlist-3 .item-box {
+    width: 3.3rem;
+}
+.songlist-3 .song-pic {
+    height: 1.9rem;
+}
+.songlist-3 .song-pic .count {
+    position: absolute;
+    left: .12rem;
+    bottom: .12rem;
+    font-size: .27rem;
+    color: #fff;
+    background: none;
+    padding: 0 .12rem;
+}
+.songlist-3 .main-text .count {
+    display: inline-flex;
+    margin: 0 .16rem;
+    padding: 0 .1rem;
+    align-items: center;
+    height: 0.3rem;
+    line-height: 1rem;
+}
+
+
+
+
+
+
+
+
+
