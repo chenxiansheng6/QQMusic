@@ -56,8 +56,8 @@ span.iconfont.SP_back {
     width: 100%;
     align-items: center;
     top: 0;
-    display: none;
-    background-color: #b3c4d1;
+    opacity: 0;
+    background-color: #32393f;
     justify-content: center;
 }
 .my_name > span{
