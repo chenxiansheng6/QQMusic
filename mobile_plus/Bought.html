@@ -22,8 +22,8 @@
         </div>
         <div class="bought_bar">
             <a>
-                <span class="bought_item">数字专辑</span>
-                <span class="green_bar active">
+                <span class="bought_item" style="color:rgb(34,213,157)">数字专辑</span>
+                <span class="green_bar active" style="background-color: rgb(34,213,157);">
                 </span>
             </a>
             <a>
@@ -43,7 +43,7 @@
             </a>
         </div>
     </header>
-    <div class="Number_Album">
+    <div class="Number_Album warehouse">
         <div class="library_header">
             <h2>2张数字专辑</h2>
             <a><span class="iconfont">&#xe8f5;</span></a>
@@ -79,15 +79,15 @@
             </div>
         </div>
     </div>
-    <div class="Single_song">
+    <div class="Single_song warehouse">
         <p>暂时无购买记录</p>
     </div>
-    <div class="Entity">
-        <span class="iconfont">&#xe683;</span>
-        <span class="coll">没有收藏的歌单</span>
+    <div class="Entity warehouse">
+        <div class="iconfont">&#xe683;</div>
+        <div class="coll">没有收藏的歌单</div>
         <a class="musicLibrary"><span>去音乐馆逛逛</span></a>
     </div>
-    <div class="Ticket">
+    <div class="Ticket warehouse">
         <div class="forms">
             <a class="orders">
                 <span>全部订单</span>
@@ -121,6 +121,30 @@
 <script src="js/fontsize.js">
 </script>
 <script type="text/javascript">
+    let item = document.getElementsByClassName("bought_item");
+    let greenB = document.getElementsByClassName("green_bar");
+    let ware = document.getElementsByClassName("warehouse");
+
+    for(let i = 0;i < item.length;i++){
+        item[i].addEventListener("click", function(){
+        for(let i = 0;i < item.length;i++){
+            item[i].style.color = "black";
+            greenB[i].style.backgroundColor = "#fff";
+            ware[i].style.display = "none";
+        }
+        item[i].style.color = "rgb(34,213,157)";
+        greenB[i].style.backgroundColor = "rgb(34,213,157)";
+        ware[i].style.display = "block";
+        },false);
+    }
+
+
+
+
+
+
+
+
 
 </script>
 </body>
