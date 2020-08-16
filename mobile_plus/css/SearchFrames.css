@@ -5,3 +5,131 @@
  * @date    2020-08-15 17:20:16
  * @version $Id$
  */
+
+
+.search_frame {
+    border-radius: 0.3rem;
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    font-size: 0.15rem;
+    background-color: #fff;
+    margin: initial;
+    height: initial;
+}
+header.header {
+    z-index: 100;
+    height: 0.8rem;
+    padding: 0 0.2rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    background: rgb(250,250,250);
+    position:fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    z-index:100;
+}
+.header_left > a > span{
+    font-size:0.3rem;
+}
+.search_history{
+    margin-top:1rem;
+
+}
+.S_title {
+    width: 94%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2 {
+    font-size: 0.22rem;
+    padding-bottom:0.15rem;
+}
+.S_title span.iconfont{
+    font-size: 0.3rem;
+}
+.S_content > ul{
+    margin: 0 auto;
+    height: 0.32rem;
+    overflow: hidden;
+}
+.content_item > li{
+    background-color: antiquewhite;
+    padding: 0.02rem 0.1rem;
+    width: 100%;
+    border-radius: 0.1rem;
+    font-size: 0.16rem;
+}
+.content_item{
+    padding: 0 0.2rem;
+    display: inline-block;
+    text-align: center;
+}
+.R_search {
+    width: 94%;
+    margin: 0 auto;
+    margin-top: 0.3rem;
+}
+.SP_qupadd{
+    padding-left:0;
+}
+.H_title {
+    display: flex;
+    align-items: center;
+    width: 94%;
+    margin: 0 auto;
+    margin-top:0.25rem;
+}
+.H_title > h2{
+    padding:0;
+    padding-right: 0.2rem;
+}
+.H_search_content {
+    margin-top: 0.25rem;
+}
+a.Play {
+    display: flex;
+    align-items: center;
+    padding: 0.02rem 0.1rem;
+    border-radius: 0.1rem;
+    background-color: #d0fbfe;
+    font-size:0.16rem;
+}
+a.Play > span.iconfont{
+    color:rgb(34,213,157);
+    padding-right:0.04rem;
+}
+ul.line_1 {
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom:0.15rem;
+    margin-top:0.1rem;
+}
+ul.line_1 > a {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    width: 50%;
+}
+span.Rank {
+    padding: 0 0.25rem 0 0;
+    color: red;
+    font-weight:400;
+}
+h3 {
+    font-size: 0.18rem;
+    padding-bottom: 0.02rem;
+}
+span.explain {
+    font-size: 0.14rem;
+    color: #706f6f;
+}
