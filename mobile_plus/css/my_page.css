@@ -27,7 +27,7 @@ div.header_bar {
     width: 100%;
 }
 span.iconfont.SP_back {
-    font-size: 0.26rem;
+    font-size: 0.28rem;
     color: #a1a1a1;
 }
 .header_left > a{
@@ -55,9 +55,11 @@ span.iconfont.SP_back {
     opacity: 0;
     background-color: #32393f;
     justify-content: center;
+    color: #fff;
+    z-index: 10;
 }
 .my_name > span{
-    font-size: 0.3rem;
+    font-size: 0.22rem;
 }
 .person_message {
     border-bottom-left-radius: .2rem;

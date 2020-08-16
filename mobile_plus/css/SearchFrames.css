@@ -1,12 +1,4 @@
 @charset "UTF-8";
-/**
- *
- * @authors Marte (iqianduan@126.com)
- * @date    2020-08-15 17:20:16
- * @version $Id$
- */
-
-
 .search_frame {
     border-radius: 0.3rem;
     width: 90%;
@@ -33,12 +25,14 @@ header.header {
     right: 0;
     z-index:100;
 }
-.header_left > a > span{
+.header_left > a > span {
     font-size:0.3rem;
 }
-.search_history{
+.header_right img {
+    width: .5rem;
+}
+.search_history {
     margin-top:1rem;
-
 }
 .S_title {
     width: 94%;
@@ -50,16 +44,17 @@ header.header {
 h2 {
     font-size: 0.22rem;
     padding-bottom:0.15rem;
+    font-weight: 500;
 }
-.S_title span.iconfont{
+.S_title span.iconfont {
     font-size: 0.3rem;
 }
-.S_content > ul{
+.S_content > ul {
     margin: 0 auto;
     height: 0.4rem;
     overflow: hidden;
 }
-.content_item > li{
+.content_item > li {
     background-color: antiquewhite;
     padding: 0.02rem 0.1rem;
     width: 100%;

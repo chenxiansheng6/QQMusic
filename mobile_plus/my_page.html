@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-    <title>My music</title>
+    <title>我的音乐</title>
     <link rel="icon" href="../img/ico.png" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/my_page.css">
@@ -182,9 +182,8 @@
 <script src="js/fontsize.js"></script>
 <script type="text/javascript">
      let hidden = document.getElementsByClassName("my_name")[0];
-     let h3 = document.scrollTop||document.documentElement.scrollTop;
+     let temp;
      window.onscroll = function(){
-        let h1 = document.innerHeight;
         let h2 = document.scrollTop||document.documentElement.scrollTop;
         if(h2 <= 10){
             hidden.style.opacity = "0";
@@ -192,7 +191,7 @@
             hidden.style.opacity = "0.2";
         }
         else {
-            let temp = 0.6+parseInt(h2/50)/100;
+            temp = 0.6+parseInt(h2/50)/30;
             hidden.style.opacity = temp;
         }
      }

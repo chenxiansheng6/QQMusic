@@ -82,6 +82,11 @@ li {
     background: #fff;
     color: gray;
 }
+.search a {
+    color: gray;
+    display: flex;
+    flex: 1;
+}
 .main {
     display:block;
     position: relative;

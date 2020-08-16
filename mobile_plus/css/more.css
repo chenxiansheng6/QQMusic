@@ -1,24 +1,17 @@
 @charset "UTF-8";
-/**
- *
- * @authors Marte (iqianduan@126.com)
- * @date    2020-08-16 10:28:31
- * @version $Id$
- */
 span.iconfont.SP_back {
-    font-size: 0.24rem;
+    font-size: 0.28rem;
 }
-header.header  > span{
+header.header  > span {
     font-size: 0.24rem;
     font-weight: 500;
     color: black;
 }
-a > span.shaoma{
-    font-size:0.2rem;
+a > span.shaoma {
+    font-size:0.28rem;
 }
-.station{
-    margin: 0 auto;
-    margin-top: 1.2rem;
+.station {
+    margin: 1.2rem auto 0;
     width: 94%;
     display: flex;
     justify-content: space-around;
@@ -27,35 +20,40 @@ a > span.shaoma{
 span.iconfont.SP_big {
     font-size: 0.4rem;
 }
-.station_child{
+.station_child {
     display: flex;
     background-color: #fff;
     justify-content: space-around;
     align-items: center;
-    flex-grow: 1;
-    width: 50%;
-    border-radius: 1rem;
+    width: 48%;
+    border-radius: .2rem;
 }
-h3{
+h3 {
     font-size:0.2rem;
 }
-.run_model > span{
+.run_model > span {
     font-size:0.16rem;
     color:#919191;
 }
+.music_library:last-child {
+    margin: .5rem 0 1rem;
+    padding: 0 .2rem;
+}
 .library_1 {
-    width: 96%;
+    width: 100%;
     padding-bottom: 0.1rem;
     border-bottom: 1px solid #9191911a;
-    margin: 0.1rem auto;
 }
-div.music_item > span:first-child{
-    font-size:0.16rem;
+.library_3 {
+    border-bottom: none;
 }
-div.music_item{
+div.music_item > span:first-child {
+    font-size:0.2rem;
+}
+div.music_item {
     padding:0.1rem 0;
 }
-.login_or_exit p{
+.login_or_exit p {
     text-align: center;
     color: red;
     border-radius: 1rem;

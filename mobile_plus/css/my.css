@@ -71,7 +71,7 @@ header.header {
     height: 0.08rem;
     border-radius: 50%;
     background-color: #f40;
-    top: 1%;
+    top: 15%;
     right: 18%;
 }
 .header_right {
@@ -226,7 +226,7 @@ p.Center1 {
     font-size: 0.15rem;
 }
 .dot_sp::after {
-    top: -11%;
+    top: 9%;
     right: -15%;
 }
 .green_btn span {
@@ -255,7 +255,7 @@ span.iconfont.btn_function {
     margin-bottom: 0.06rem;
 }
 span.song_number {
-    font-size: 0.12rem;
+    font-size: 0.14rem;
     color: #9c9c9c;
     padding-top: 0.06rem;
 }
