@@ -1,15 +1,9 @@
 @charset "UTF-8";
-/**
- *
- * @authors Marte (iqianduan@126.com)
- * @date    2020-08-15 14:11:08
- * @version $Id$
- */
 h2{
     font-size:0.2rem;
 }
 header.header {
-    box-shadow: 1px 0px 4px #a4a4a4;
+    box-shadow: 1px 0 4px #a4a4a4;
     background: #fff;
 }
 div.header_bar{
@@ -28,7 +22,7 @@ div.header_bar{
 }
 
 .bought_item{
-    font-size:0.18rem;
+    font-size:0.22rem;
 }
 .bought_bar {
     display: flex;
