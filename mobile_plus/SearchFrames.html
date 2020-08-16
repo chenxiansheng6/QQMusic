@@ -29,10 +29,10 @@
     <div class="search_history">
         <div class="S_title">
             <h2>搜索历史</h2>
-            <span class="iconfont">&#xed4d;</span>
+            <a class="delALL"><span class="iconfont">&#xed4d;</span></a>
         </div>
         <div class="S_content">
-            <ul>
+            <ul class="S_content_list">
                 <a class="content_item"><li>杰伦</li></a>
                 <a class="content_item"><li>青春的愿望</li></a>
                 <a class="content_item"><li>毛不易</li></a>
@@ -46,7 +46,7 @@
                 <a class="content_item"><li>天外来物</li></a>
                 <a class="content_item"><li>李荣浩</li></a>
                 <a class="content_item"><li>林俊杰</li></a>
-                <a class="content_item"><li class="iconfont Close">&#xe61e;</li></a>
+                <a class="content_item "><li class="iconfont Close" >&#xe61e;</li></a>
             </ul>
         </div>
     </div>
@@ -167,7 +167,24 @@
     </div>
 </div>
 <script src="js/fontsize.js">
+</script>
+<script type="text/javascript">
+    let delALL = document.getElementsByClassName("delALL")[0];
+    let opens = document.getElementsByClassName("Open")[0];
+    let closes = document.getElementsByClassName("Close")[0];
+    let S_content_list = document.getElementsByClassName("S_content_list")[0];
 
+    opens.addEventListener("click",function(){
+        S_content_list.style.height = "100%";
+        this.style.display = "none";
+    },false);
+    closes.addEventListener("click",function(){
+         S_content_list.style.height = "0.4rem";
+         opens.style.display = "inline-block";
+    },false);
+    delALL.addEventListener("click",function(){
+        S_content_list.style.height = "0rem";
+    },false);
 </script>
 </body>
 </html>
