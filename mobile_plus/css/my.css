@@ -49,7 +49,7 @@ header.header {
     content: "";
     border-radius: 0.1rem;
     left: -1%;
-    bottom: -33%;
+    bottom: -26%;
     background-color: rgb(34,213,157);
     width: 0.55rem;
     position: absolute;
@@ -84,7 +84,7 @@ header.header {
     display: flex;
     justify-content: end;
     height: 100%;
-    margin: 1rem auto 0;
+    margin: .9rem auto 0;
     font-size: 0.15rem;
     background-color: #fff;
 }
